@@ -155,9 +155,76 @@
             <video src="media/Eb2.mp4" controls></video>
         </div>
         <div class="video-container">
-            <video src="media/Eb3.mp4" controls></video>
+            <video src="media/Eb3_1.mp4" controls></video>
+        </div>
+        <div class="video-container">
+            <video src="media/Eb3-2.mp4" controls></video>
         </div>
     </div>
+
+    <h2>🧪 Training Configuration & Results</h2>
+
+    <table class="latex-style-table">
+    <thead>
+        <tr>
+        <th>Parameter</th>
+        <th>Diffusion Policy</th>
+        <th>LSTM-GMM</th>
+        <th>IBC</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Batch Size</td>
+        <td>64</td>
+        <td>64</td>
+        <td>64</td>
+        </tr>
+        <tr>
+        <td>Number of Workers</td>
+        <td>16</td>
+        <td>16</td>
+        <td>16</td>
+        </tr>
+        <tr>
+        <td>Camera</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        </tr>
+        <tr>
+        <td>Training Time</td>
+        <td>21 hours on agpu72 with 16 core</td>
+        <td>TBD on agpu72 with 16 core</td>
+        <td>TBD on agpu72 with 16 core</td>
+        </tr>
+        <tr>
+        <td>Global Step</td>
+        <td>189,299</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+        <tr>
+        <td>Learning Rate</td>
+        <td>0</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+        <tr>
+        <td>Train Action MSE Error</td>
+        <td>0.0013418745948001742</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+        <tr>
+        <td>Train Loss</td>
+        <td>0.0008533217959840621</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+    </tbody>
+    </table>
+
 
     <h2>📊 Execution Time and Success Rates</h2>
     <p><i>Execution time and success rates for different grasping behaviors across three algorithms.</i></p>
