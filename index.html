@@ -175,10 +175,16 @@
     </thead>
     <tbody>
         <tr>
+        <td>Epochs</td>
+        <td>300</td>
+        <td>1000</td>
+        <td>1000</td>
+        </tr>
+        <tr>
         <td>Batch Size</td>
         <td>64</td>
-        <td>64</td>
-        <td>64</td>
+        <td>128</td>
+        <td>128</td>
         </tr>
         <tr>
         <td>Number of Workers</td>
@@ -199,11 +205,11 @@
         <td>TBD on agpu72 with 16 core</td>
         </tr>
         <tr>
-        <td>Global Step</td>
+        <!-- <td>Global Step</td>
         <td>189,299</td>
         <td>TBD</td>
         <td>TBD</td>
-        </tr>
+        </tr> -->
         <tr>
         <td>Learning Rate</td>
         <td>0</td>
@@ -224,6 +230,13 @@
         </tr>
     </tbody>
     </table>
+
+    <div class="image-container">
+        <img src="media/W&B Chart 3_26_2025, 1_57_21 PM.png" alt="mse error for diffusion policy">
+        <img src="media/" alt="mse error for LSTM-GMM">
+        <img src="media/" alt="mse error for IBC">
+    </div>
+
 
 
     <h2>📊 Execution Time and Success Rates</h2>
@@ -249,7 +262,7 @@
         <td>6/10</td>
         <td>4/10</td>
         <td>0/10</td>
-        <td>120 Sec</td>
+        <td>52 Sec</td>
         </tr>
         <tr>
         <td>2</td>
@@ -265,7 +278,7 @@
         <td>0/10</td>
         <td>10/10</td>
         <td>0/10</td>
-        <td>TBD</td>
+        <td>120 Sec</td>
         </tr>
 
         <tr>
