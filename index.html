@@ -7,14 +7,28 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      max-width: 800px;
-      line-height: 1.6;
+      margin: 0;
       background-color: #f9f9f9;
       color: #333;
     }
+    .centered-content {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
     h1, h2, h3 {
       color: #2c3e50;
+    }
+    p, ul {
+      text-align: center;
+    }
+    ul {
+      list-style-position: inside;
+      padding-left: 0;
     }
     code {
       background: #eee;
@@ -29,6 +43,7 @@
       max-width: 100%;
       height: auto;
       border: 1px solid #ccc;
+      border-radius: 8px;
     }
     .button {
       display: inline-block;
@@ -42,61 +57,77 @@
     .button:hover {
       background-color: #005b99;
     }
+    hr {
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
+  <div class="centered-content">
+    <h1>GraspDiff</h1>
+    <h3>Diffusion Policy for Dual-Jaw Robotic Grasping</h3>
 
-  <h1>GraspDiff</h1>
-  <h3>Diffusion Policy for Dual-Jaw Robotic Grasping</h3>
+    <p><strong>GraspDiff</strong> is a robotics research project that explores <b>imitation learning</b> using a <b>diffusion policy</b> to control a <b>UR10e robotic arm</b> equipped with a customized <b>two-DOF gripper</b>. This system learns to manipulate real-world objects—in this case, chickens—by mimicking human demonstrations.</p>
 
-  <p><strong>GraspDiff</strong> is a robotics research project that explores <b>imitation learning</b> using a <b>diffusion policy</b> to control a <b>UR10e robotic arm</b> equipped with a customized <b>two-DOF gripper</b>. This system learns to manipulate real-world objects—in this case, chickens—by mimicking human demonstrations.</p>
-
-  <div class="image-container">
-    <img src="media/BigPictureApplication.png" alt="Robot demo">
-    <p><i>(Left) The robotic gripper equipped with two jaws and wrist cameras
+    <div class="image-container">
+      <img src="media/BigPictureApplication.png" alt="Robot demo">
+      <p><i>(Left) The robotic gripper equipped with two jaws and wrist cameras
         designed for autonomous poultry handling. (Right) Comparison between the
         current industry-standard manual process and our autonomous approach using
         imitation learning to pick up and rehang poultry.</i></p>
+    </div>
+
+    <h2>🚀 Highlights</h2>
+    <ul>
+      <li>Uses <b>Diffusion Policy</b> for continuous action prediction</li>
+      <li>Supports real-time control with a <b>SpaceMouse</b> interface</li>
+      <li>Trained on real human demonstrations with a custom gripper</li>
+      <li>Tested in industrial scenarios involving poultry handling</li>
+    </ul>
+
+    <h2>🧠 Method</h2>
+    <p>
+      We leverage the power of <b>diffusion models</b> to learn a robust and flexible control policy from demonstrations. The dual-jaw gripper adds complexity in manipulation, and GraspDiff accounts for it by modeling an 8-dimensional action space: 6-DOF robot pose + 2-DOF gripper status.
+    </p>
+
+    <h2>📦 Repository Structure</h2>
+    <ul>
+      <li><code>gripper/</code> – Custom hardware interface for jaw control</li>
+      <li><code>scripts/</code> – Real-time teleop and data collection</li>
+      <li><code>policy/</code> – Diffusion policy training and inference</li>
+      <li><code>visualization/</code> – Tools to visualize actions and trajectories</li>
+    </ul>
+
+    <h2>🎥 Demonstration Videos</h2>
+    <div class="video-row">
+        <div class="video-container">
+            <video src="media/b1.mp4" controls></video>
+        </div>
+        <div class="video-container">
+            <video src="media/b2.mp4" controls></video>
+        </div>
+        <div class="video-container">
+            <video src="media/b3.mp4" controls></video>
+        </div>
+    </div>
+
+    <h2>📄 Paper & Citation</h2>
+    <p>
+      Coming soon — if you use this code, please cite our work!
+    </p>
+
+    <h2>🔗 Links</h2>
+    <ul>
+      <li><a href="https://github.com/yourusername/GraspDiff" target="_blank">GitHub Repository</a></li>
+      <li><a href="https://diffusion-policy.cs.columbia.edu" target="_blank">Diffusion Policy (original paper)</a></li>
+    </ul>
+
+    <p>
+      <a class="button" href="https://github.com/yourusername/GraspDiff">View on GitHub</a>
+    </p>
+
+    <hr/>
+    <p><small>© 2025 GraspDiff Project – Built with ❤️ by [Your Name or Lab]</small></p>
   </div>
-
-  <h2>🚀 Highlights</h2>
-  <ul>
-    <li>Uses <b>Diffusion Policy</b> for continuous action prediction</li>
-    <li>Supports real-time control with a <b>SpaceMouse</b> interface</li>
-    <li>Trained on real human demonstrations with a custom gripper</li>
-    <li>Tested in industrial scenarios involving poultry handling</li>
-  </ul>
-
-  <h2>🧠 Method</h2>
-  <p>
-    We leverage the power of <b>diffusion models</b> to learn a robust and flexible control policy from demonstrations. The dual-jaw gripper adds complexity in manipulation, and GraspDiff accounts for it by modeling an 8-dimensional action space: 6-DOF robot pose + 2-DOF gripper status.
-  </p>
-
-  <h2>📦 Repository Structure</h2>
-  <ul>
-    <li><code>gripper/</code> – Custom hardware interface for jaw control</li>
-    <li><code>scripts/</code> – Real-time teleop and data collection</li>
-    <li><code>policy/</code> – Diffusion policy training and inference</li>
-    <li><code>visualization/</code> – Tools to visualize actions and trajectories</li>
-  </ul>
-
-  <h2>📄 Paper & Citation</h2>
-  <p>
-    Coming soon — if you use this code, please cite our work!
-  </p>
-
-  <h2>🔗 Links</h2>
-  <ul>
-    <li><a href="https://github.com/yourusername/GraspDiff" target="_blank">GitHub Repository</a></li>
-    <li><a href="https://diffusion-policy.cs.columbia.edu" target="_blank">Diffusion Policy (original paper)</a></li>
-  </ul>
-
-  <p>
-    <a class="button" href="https://github.com/yourusername/GraspDiff">View on GitHub</a>
-  </p>
-
-  <hr/>
-  <p><small>© 2025 GraspDiff Project – Built with ❤️ by [Your Name or Lab]</small></p>
-
 </body>
 </html>
