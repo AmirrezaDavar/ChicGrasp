@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GraspDiff: Imitation Learning for Dual-Jaw Grippers</title>
   <style>
+    
+    .video-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    }
+
+    .video-container video {
+    width: 250px;
+    max-height: 180px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    }
+
     body {
       font-family: Arial, sans-serif;
       margin: 0;
@@ -111,6 +127,19 @@
         </div>
     </div>
 
+    <h2>🎥 Evaluation Videos</h2>
+    <div class="video-row">
+        <div class="video-container">
+            <video src="media/Eb1.mp4" controls></video>
+        </div>
+        <div class="video-container">
+            <video src="media/Eb2.mp4" controls></video>
+        </div>
+        <div class="video-container">
+            <video src="media/Eb3.mp4" controls></video>
+        </div>
+    </div>
+
     <h2>📄 Paper & Citation</h2>
     <p>
       Coming soon — if you use this code, please cite our work!
@@ -127,7 +156,7 @@
     </p>
 
     <hr/>
-    <p><small>© 2025 GraspDiff Project – Built with ❤️ by [Your Name or Lab]</small></p>
+    <p><small>© 2025 GraspDiff Project – Built with ❤️ by [safelab]</small></p>
   </div>
 </body>
 </html>
