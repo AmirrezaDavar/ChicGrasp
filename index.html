@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>GraspDiff: Imitation Learning for Dual-Jaw Grippers</title>
   <style>
-    
+
     .video-row {
     display: flex;
     justify-content: center;
@@ -19,6 +19,25 @@
     max-height: 180px;
     border-radius: 8px;
     border: 1px solid #ccc;
+    }
+
+    .latex-style-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+    text-align: center;
+    }
+
+    .latex-style-table th,
+    .latex-style-table td {
+    border: 1px solid #444;
+    padding: 8px;
+    }
+
+    .latex-style-table thead {
+    background-color: #f2f2f2;
+    font-weight: bold;
     }
 
     body {
@@ -80,10 +99,10 @@
 </head>
 <body>
   <div class="centered-content">
-    <h1>GraspDiff</h1>
+    <h1>ChicGrasp</h1>
     <h3>Diffusion Policy for Dual-Jaw Robotic Grasping</h3>
 
-    <p><strong>GraspDiff</strong> is a robotics research project that explores <b>imitation learning</b> using a <b>diffusion policy</b> to control a <b>UR10e robotic arm</b> equipped with a customized <b>two-DOF gripper</b>. This system learns to manipulate real-world objects—in this case, chickens—by mimicking human demonstrations.</p>
+    <p><strong>ChicGrasp</strong> is a robotics research project that explores <b>imitation learning</b> using a <b>diffusion policy</b> to control a <b>UR10e robotic arm</b> equipped with a customized <b>two-DOF gripper</b>. This system learns to manipulate real-world objects—in this case, chickens—by mimicking human demonstrations.</p>
 
     <div class="image-container">
       <img src="media/BigPictureApplication.png" alt="Robot demo">
@@ -139,6 +158,103 @@
             <video src="media/Eb3.mp4" controls></video>
         </div>
     </div>
+
+    <h2>📊 Execution Time and Success Rates</h2>
+    <p><i>Execution time and success rates for different grasping behaviors across three algorithms.</i></p>
+
+    <table class="latex-style-table">
+    <thead>
+        <tr>
+        <th>Algorithm</th>
+        <th>Behavior #</th>
+        <th>Success Rate</th>
+        <th>Successful Attempts</th>
+        <th>Failed Attempts</th>
+        <th>Placement (Success/Total)</th>
+        <th>Execution Time (s)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td rowspan="3">Diffusion Policy + Waypoints</td>
+        <td>1</td>
+        <td>60%</td>
+        <td>6/10</td>
+        <td>4/10</td>
+        <td>0/10</td>
+        <td>120 Sec</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>50%</td>
+        <td>5/10</td>
+        <td>5/10</td>
+        <td>0/10</td>
+        <td>120 Sec</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>0%</td>
+        <td>0/10</td>
+        <td>10/10</td>
+        <td>0/10</td>
+        <td>TBD</td>
+        </tr>
+
+        <tr>
+        <td rowspan="3">GMM + Waypoints</td>
+        <td>1</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+
+        <tr>
+        <td rowspan="3">IBC + Waypoints</td>
+        <td>1</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+        <tr>
+        <td>2</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+        <tr>
+        <td>3</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        <td>TBD</td>
+        </tr>
+    </tbody>
+    </table>
+
 
     <h2>📄 Paper & Citation</h2>
     <p>
