@@ -132,9 +132,9 @@ The 3D models for the ChicGrasp dual-jaw gripper and mounting interface are host
 - **[Jaw Finger](https://cad.onshape.com/documents/c098ce0ed4246c3a1834eced/w/16740a13cc3952ca8e6abbae/e/ee0d7249f2db9b26cbcc117f)**
 - **[Connecting Interface]()**
 - **[Camera Holder]()**
+- **[Linear Cylinder](https://cad.onshape.com/documents/5d45cb7c6980e83422505d12/w/f31f56fea25c76280a7aad0f/e/5af2db64cb1051a35a8fc450)**
 
 You can open the link in your browser, inspect the full assembly, and export any part.
-
 
 
 
