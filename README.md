@@ -68,3 +68,29 @@ conda activate chicgrasp_real
 ```
 These environments are based on the original Diffusion Policy requirements. For GPU / CUDA versions, please also refer to the official DP repo:
 https://github.com/real-stanford/diffusion_policy#installation
+
+3. Install the ChicGrasp package
+```text
+pip install -e .
+```
+
+## 🤖 Hardware Setup (Real Robot)
+ChicGrasp was developed with:
+
+- UR10e robot arm (https://docs.universal-robots.com/tutorials/communication-protocol-tutorials/rtde-guide.html RTDE is required)
+- Three D415 cameras (https://www.intelrealsense.com/depth-camera-d415/)
+- One SpaceMouse (https://3dconnexion.com/us/product/spacemouse-wireless/)
+- Arduino UNO R4 WiFi for valve control (https://store-usa.arduino.cc/products/uno-r4-wifi)
+- Dual-jaw pneumatic gripper (Airtac HFZ + 3D-printed jaws)
+  - Airtac HFZ16 (https://www.airtacs.com/products/airtac-hfz-air-fingerdouble-acting-hfz16-1)
+  - TAILONZ PNEUMATIC 1/4"NPT Solenoid Valve (https://www.amazon.com/Pneumatic-Solenoid-4V210-08-Pilot-Operated-Connection/dp/B081PTW87K)
+
+- Linux PC connected:
+  - via Ethernet to the UR10e
+  - via USB to the Arduino
+
+Set these environment variables (example):
+```text
+export UR_IP=192.168.0.10        # TODO: set to your UR10e IP
+export ARDUINO_PORT=/dev/ttyACM0 # TODO: set to your Arduino serial port
+```
