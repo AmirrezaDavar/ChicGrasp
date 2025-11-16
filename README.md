@@ -94,3 +94,51 @@ Set these environment variables (example):
 export UR_IP=192.168.0.10        # TODO: set to your UR10e IP
 export ARDUINO_PORT=/dev/ttyACM0 # TODO: set to your Arduino serial port
 ```
+## Demonstration, Training, and Evaluation 
+
+Before running anything on the real system, check that:
+
+- The UR10e controller is powered on and reachable over the network (keep the emergency stop within easy reach at all times).
+- Your RealSense camera(s) are plugged into the workstation and working (you can verify with `realsense-viewer`).
+- The SpaceMouse is connected and the `spacenavd` daemon is running (check with `systemctl status spacenavd`).
+
+Start the demonstration-collection script. Press **`C`** to begin recording, use the SpaceMouse to teleoperate the robot, and press **`S`** to stop recording:
+
+```bash
+(chicgrasp_real)$ python demo_real_robot.py -o data/demo_pusht_real --robot_ip 192.168.0.204
+```
+
+This command will create a demonstration dataset in data/demo_pusht_real that follows the same structure
+
+To train a Diffusion Policy model on this data, run:
+
+```bash
+(chicgrasp_real)$ python train.py --config-name=train_diffusion_unet_real_image_workspace task.dataset_path=data/demo_pusht_real
+```
+If your camera configuration differs from the default, update diffusion_policy/config/task/real_pusht_image.yaml accordingly.
+
+After training finishes and you have a checkpoint at data/outputs/blah/checkpoints/latest.ckpt, you can evaluate the policy with:
+
+```bash
+python eval_real_robot.py -i data/outputs/blah/checkpoints/latest.ckpt -o data/eval_pusht_real --robot_ip 192.168.0.204
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
