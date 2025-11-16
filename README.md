@@ -23,7 +23,7 @@ This repository is **built on top of** the original
 
 ChicGrasp mainly adds:
 
-- An 5D action space (3 for robot, 2 for gripper)
+- A 5D action space (3 for robot, 2 for gripper):  
   \[x, y, z, left_jaw, right_jaw\]
 - Gripper logging and replay in the dataset
 - Real-robot scripts for UR10e + Arduino-controlled pneumatic gripper
@@ -36,21 +36,21 @@ If you know Diffusion Policy, this repo will feel familiar.
 
 ```text
 ChicGrasp/
-├─ diffusion_policy/           # Core DP implementation (models, training, envs)
-├─ plots/                      # Plotting / analysis scripts
-├─ tests/                      # Unit tests (if any)
-├─ conda_environment.yaml      # Default environment (Linux)
-├─ conda_environment_macos.yaml# Environment for macOS
-├─ conda_environment_real.yaml # Environment for real UR10e + gripper
-├─ demo_pusht.py               # Example pusht demo
-├─ demo_real_robot.py          # Example real-robot demo
-├─ eval.py                     # Evaluation in sim
-├─ eval_real_robot.py          # Evaluation on real robot
-├─ multirun_metrics.py         # Helper for multi-run analysis
-├─ ray_exec.py                 # Ray launcher
-├─ ray_train_multirun.py       # Multi-run training
-├─ setup.py                    # Package install script
-├─ train.py                    # Main training entry point
+├─ diffusion_policy/            # Core DP implementation (models, training, envs)
+├─ plots/                       # Plotting / analysis scripts
+├─ tests/                       # Unit tests (if any)
+├─ conda_environment.yaml       # Default environment (Linux)
+├─ conda_environment_macos.yaml # Environment for macOS
+├─ conda_environment_real.yaml  # Environment for real UR10e + gripper
+├─ demo_pusht.py                # Example pusht demo
+├─ demo_real_robot.py           # Example real-robot demo
+├─ eval.py                      # Evaluation in sim
+├─ eval_real_robot.py           # Evaluation on real robot
+├─ multirun_metrics.py          # Helper for multi-run analysis
+├─ ray_exec.py                  # Ray launcher
+├─ ray_train_multirun.py        # Multi-run training
+├─ setup.py                     # Package install script
+├─ train.py                     # Main training entry point
 └─ README.md
 ```
 
@@ -77,14 +77,14 @@ pip install -e .
 ## 🤖 Hardware Setup (Real Robot)
 ChicGrasp was developed with:
 
-- UR10e robot arm (https://docs.universal-robots.com/tutorials/communication-protocol-tutorials/rtde-guide.html RTDE is required)
-- Three D415 cameras (https://www.intelrealsense.com/depth-camera-d415/)
-- One SpaceMouse (https://3dconnexion.com/us/product/spacemouse-wireless/)
-- Arduino UNO R4 WiFi for valve control (https://store-usa.arduino.cc/products/uno-r4-wifi)
+- UR10e robot arm RTDE interface is required: https://docs.universal-robots.com/tutorials/communication-protocol-tutorials/rtde-guide.html
+- Three Intel RealSense D415 cameras https://www.intelrealsense.com/depth-camera-d415/
+- One SpaceMouse https://3dconnexion.com/us/product/spacemouse-wireless/
+- Arduino UNO R4 WiFi for valve control https://store-usa.arduino.cc/products/uno-r4-wifi
 - Screws for gripper ()
 - Dual-jaw pneumatic gripper (Airtac HFZ + 3D-printed jaws)
-  - Airtac HFZ16 (https://www.airtacs.com/products/airtac-hfz-air-fingerdouble-acting-hfz16-1)
-  - TAILONZ PNEUMATIC 1/4"NPT Solenoid Valve (https://www.amazon.com/Pneumatic-Solenoid-4V210-08-Pilot-Operated-Connection/dp/B081PTW87K)
+  - Airtac HFZ16: https://www.airtacs.com/products/airtac-hfz-air-fingerdouble-acting-hfz16-1
+  - TAILONZ PNEUMATIC 1/4" NPT solenoid valve (2-position, 5-port): https://www.amazon.com/Pneumatic-Solenoid-4V210-08-Pilot-Operated-Connection/dp/B081PTW87K
 
 - Linux PC connected:
   - via Ethernet to the UR10e
@@ -126,10 +126,14 @@ After training finishes and you have a checkpoint at data/outputs/blah/checkpoin
 
 ## 📥 CAD Models
 
+The main ChicGrasp CAD models can be downloaded here:
+
 - **[ChicGrasp Dual-Jaw Gripper Assembly](https://cad.onshape.com/documents/59651785fc8216c351878e9e/w/96ccd4d006239148f4499ab2/e/caa066b5de7d7eefbd6d0296)**
 - **[Jaw Finger](https://cad.onshape.com/documents/f9923c0a774e494641001547/w/5449e3aa08570ad5e1bd725d/e/4c4594f9492c86e876574dad)**
 - **[Flenge](https://cad.onshape.com/documents/2ba3c05d30474bc51e5caf05/w/b2a50accccf850db7a426ca7/e/8b4a64de694fb9754597638f)**
 - **[Camera Holder](https://cad.onshape.com/documents/1ce782597a880b6af038303f/w/750def440809f62fce0fa768/e/c56676c9f0502747cf60a721)**
+
+Open the links in a browser, then right-click on a part or the Part Studio tab in Onshape and select Export… to download STEP/STL files.
 
 ## 🧾 Citation
 
