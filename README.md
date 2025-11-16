@@ -57,5 +57,7 @@ ChicGrasp/
 ## Requirements & Installation
 
 1. Clone the repo
+```text
 git clone https://github.com/AmirrezaDavar/ChicGrasp.git
 cd ChicGrasp
+```
