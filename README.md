@@ -130,7 +130,6 @@ After training finishes and you have a checkpoint at data/outputs/blah/checkpoin
 - **[Jaw Finger](https://cad.onshape.com/documents/f9923c0a774e494641001547/w/5449e3aa08570ad5e1bd725d/e/4c4594f9492c86e876574dad)**
 - **[Flenge](https://cad.onshape.com/documents/2ba3c05d30474bc51e5caf05/w/b2a50accccf850db7a426ca7/e/8b4a64de694fb9754597638f)**
 - **[Camera Holder](https://cad.onshape.com/documents/1ce782597a880b6af038303f/w/750def440809f62fce0fa768/e/c56676c9f0502747cf60a721)**
-- **[Linear Cylinder](https://cad.onshape.com/documents/5d45cb7c6980e83422505d12/w/f31f56fea25c76280a7aad0f/e/5af2db64cb1051a35a8fc450)**
 
 
 
