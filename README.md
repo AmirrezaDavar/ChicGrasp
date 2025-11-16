@@ -131,7 +131,18 @@ After training finishes and you have a checkpoint at data/outputs/blah/checkpoin
 - **[Flenge](https://cad.onshape.com/documents/2ba3c05d30474bc51e5caf05/w/b2a50accccf850db7a426ca7/e/8b4a64de694fb9754597638f)**
 - **[Camera Holder](https://cad.onshape.com/documents/1ce782597a880b6af038303f/w/750def440809f62fce0fa768/e/c56676c9f0502747cf60a721)**
 
+## 🧾 Citation
 
+If you use ChicGrasp in your research, please cite this work:
+
+```text
+@article{davar2025chicgrasp,
+  title   = {ChicGrasp: Imitation-Learning based Customized Dual-Jaw Gripper Control for Delicate, Irregular Bio-products Manipulation},
+  author  = {Davar, Amirreza and Others},
+  journal = {arXiv preprint arXiv:XXXXX},
+  year    = {2025}
+}
+```
 
 
 
