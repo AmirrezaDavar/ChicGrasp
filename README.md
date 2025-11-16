@@ -127,8 +127,9 @@ After training finishes and you have a checkpoint at data/outputs/blah/checkpoin
 
 The 3D models for the ChicGrasp dual-jaw gripper and mounting interface are hosted on Onshape:
 
-- **[ChicGrasp Dual-Jaw Gripper]([https://cad.onshape.com/documents/a818888644a15afa6cc68ee5/w/2885b48b018cda84f425beca/e/3e8771c2124cee024edd2fed](https://cad.onshape.com/documents/c098ce0ed4246c3a1834eced/w/16740a13cc3952ca8e6abbae/e/ee0d7249f2db9b26cbcc117f))**
-- **[Jaw finger]([https://cad.onshape.com/documents/a818888644a15afa6cc68ee5/w/2885b48b018cda84f425beca/e/3e8771c2124cee024edd2fed](https://cad.onshape.com/documents/c098ce0ed4246c3a1834eced/w/16740a13cc3952ca8e6abbae/e/ee0d7249f2db9b26cbcc117f))**
+- **[ChicGrasp Dual-Jaw Gripper](https://cad.onshape.com/documents/c098ce0ed4246c3a1834eced/w/16740a13cc3952ca8e6abbae/e/ee0d7249f2db9b26cbcc117f)**
+- **[Jaw Finger](https://cad.onshape.com/documents/a818888644a15afa6cc68ee5/w/2885b48b018cda84f425beca/e/3e8771c2124cee024edd2fed)**
+
 
 You can open the link in your browser, inspect the full assembly, and export any part.
 
