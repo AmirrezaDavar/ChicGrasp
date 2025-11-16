@@ -52,3 +52,7 @@ ChicGrasp/
 ├─ setup.py                    # Package install script
 ├─ train.py                    # Main training entry point
 └─ README.md
+
+1. close the repo:
+git clone https://github.com/AmirrezaDavar/ChicGrasp.git
+cd ChicGrasp
