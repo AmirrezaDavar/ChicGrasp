@@ -61,3 +61,10 @@ ChicGrasp/
 git clone https://github.com/AmirrezaDavar/ChicGrasp.git
 cd ChicGrasp
 ```
+2. Create a conda environment
+```text
+conda env create -f conda_environment_real.yaml -n chicgrasp_real
+conda activate chicgrasp_real
+```
+These environments are based on the original Diffusion Policy requirements. For GPU / CUDA versions, please also refer to the official DP repo:
+https://github.com/real-stanford/diffusion_policy#installation
