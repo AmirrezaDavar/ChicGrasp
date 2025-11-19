@@ -74,6 +74,43 @@ https://github.com/real-stanford/diffusion_policy#installation
 pip install -e .
 ```
 
+## 📦 Experiments, checkpoints, and logs
+
+## 📦 ChicGrasp data, checkpoints, and videos
+
+Large files are hosted on Box in the **ChicGrasp-data** folder, separate from this code:
+
+```bash
+https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p
+```
+Locally, we mirror the same layout under `data/`:
+
+```text
+data/
+  training/       # demonstration datasets (e.g., chicgrasp_real_image.zarr.zip)
+  experiments/    # configs, logs, checkpoints for each method
+  videos/         # evaluation videos (seen + unseen)
+```
+
+
+# 1) Training data
+```bash
+bash scripts/download_chicgrasp_training.sh
+```
+
+
+# 2) Experiment logs + checkpoints (Diffusion Policy CNN, IBC, LSTM-GMM)
+```bash
+bash scripts/download_chicgrasp_experiments.sh
+```
+
+
+# 3) Evaluation videos
+```bash
+bash scripts/download_chicgrasp_videos.sh
+```
+
+
 ## 🤖 Hardware Setup (Real Robot)
 ChicGrasp was developed with:
 
