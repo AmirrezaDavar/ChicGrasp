@@ -91,19 +91,19 @@ data/
 ```
 
 
-# 1) Training data
+## 1) Training data
 ```bash
 bash scripts/download_chicgrasp_training.sh
 ```
 
 
-# 2) Experiment logs + checkpoints (Diffusion Policy CNN, IBC, LSTM-GMM)
+## 2) Experiment logs + checkpoints (Diffusion Policy CNN, IBC, LSTM-GMM)
 ```bash
 bash scripts/download_chicgrasp_experiments.sh
 ```
 
 
-# 3) Evaluation videos
+## 3) Evaluation videos
 ```bash
 bash scripts/download_chicgrasp_videos.sh
 ```
