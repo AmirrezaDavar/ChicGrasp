@@ -74,8 +74,6 @@ https://github.com/real-stanford/diffusion_policy#installation
 pip install -e .
 ```
 
-## 📦 Experiments, checkpoints, and logs
-
 ## 📦 ChicGrasp data, checkpoints, and videos
 
 Large files are hosted on Box in the **ChicGrasp-data** folder, separate from this code:
