@@ -78,9 +78,9 @@ pip install -e .
 
 Large files are hosted on Box in the **ChicGrasp-data** folder, separate from this code:
 
-```bash
-https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p
-```
+[ChicGrasp-data]([https://github.com/real-stanford/diffusion_policy](https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p))
+
+
 Locally, we mirror the same layout under `data/`:
 
 ```text
