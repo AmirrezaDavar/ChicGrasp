@@ -32,28 +32,6 @@ If you know Diffusion Policy, this repo will feel familiar.
 
 ---
 
-## 📁 Repository Structure
-
-```text
-ChicGrasp/
-├─ diffusion_policy/            # Core DP implementation (models, training, envs)
-├─ plots/                       # Plotting / analysis scripts
-├─ tests/                       # Unit tests (if any)
-├─ conda_environment.yaml       # Default environment (Linux)
-├─ conda_environment_macos.yaml # Environment for macOS
-├─ conda_environment_real.yaml  # Environment for real UR10e + gripper
-├─ demo_pusht.py                # Example pusht demo
-├─ demo_real_robot.py           # Example real-robot demo
-├─ eval.py                      # Evaluation in sim
-├─ eval_real_robot.py           # Evaluation on real robot
-├─ multirun_metrics.py          # Helper for multi-run analysis
-├─ ray_exec.py                  # Ray launcher
-├─ ray_train_multirun.py        # Multi-run training
-├─ setup.py                     # Package install script
-├─ train.py                     # Main training entry point
-└─ README.md
-```
-
 ## Requirements & Installation
 
 1. Clone the repo
