@@ -1,8 +1,15 @@
 # Rebuild the ChicGrasp presentation
 
-This folder rebuilds the publication tables, plots, actual offline model traces, CAD view, and 84-second film. Raw source archives remain external. No script here sends robot commands.
+This folder rebuilds the publication tables, plots, actual offline model traces, CAD view, and research videos. Raw source archives remain external. No script here sends robot commands.
 
-## Outputs
+## Current outputs
+
+- `docs/assets/media/chicgrasp_action_process.mp4`: 10.93 seconds, 1280×720, 30 FPS, actual camera-overlay denoising and a Matplotlib jaw inset.
+- `docs/assets/media/chicgrasp_action_process_clean.mp4`: the same sequence without the jaw inset.
+- `docs/assets/media/chicgrasp_overview_80s.mp4`: revised 80-second overview, 1920×1080, 24 FPS.
+- `docs/assets/data/process/`: six-candidate traces, projection estimate, held-out tracking validation, and frame metadata.
+
+## Additional retained outputs
 
 - `docs/index.html`: responsive project page and interactive denoising explorer; works over HTTP or directly from disk.
 - `docs/evidence.html`: sources, discrepancies, and interpretation.
@@ -11,6 +18,32 @@ This folder rebuilds the publication tables, plots, actual offline model traces,
 - `docs/assets/media/diffusion_action_generation.mp4`: eight-second actual denoising replay.
 - `docs/assets/media/gripper_cad_orbit.mp4`: eight-second orbit of the composed CAD assembly.
 - `docs/assets/data/`: source inventory, CSVs, captured trace, provenance, and validation.
+
+## Recreate the reference-style process video
+
+Use the original `robodiff` environment for checkpoint inference; use a Python environment with Matplotlib, NumPy and OpenCV for projection and rendering. The commands read source ZIPs without extraction.
+
+```bash
+python presentation/replay_process.py \
+  --data-root /path/to/ChicGrasp-data \
+  --steps 16 --candidates 6 --output docs/assets/data/process
+python presentation/estimate_projection.py \
+  --data-root /path/to/ChicGrasp-data --output docs/assets/data/process
+python presentation/render_process.py \
+  --data-root /path/to/ChicGrasp-data \
+  --process-data docs/assets/data/process --review /path/to/external/review
+python presentation/build_figures.py
+python presentation/render_overview.py \
+  --data-root /path/to/ChicGrasp-data --review /path/to/external/review
+```
+
+The projection estimator is specific to episode 14, camera 2 and its fixed gripper orientation. It tracks rigid gripper features with Lucas–Kanade optical flow, fits a local affine displacement map on alternating two-second blocks, and validates on the withheld blocks. The image origin is manually selected between the jaws. It is an approximate display projection, not a measured camera calibration. Noisy coordinates outside the observed motion volume are extrapolated. See `projection.json` for limits and `render_provenance.json` for each frame's source time and iteration.
+
+The replay follows public evaluation overrides (16 DDIM iterations, 15 returned actions), while the older numerical explorer retains the checkpoint defaults (100 iterations, 6 returned actions). Every trajectory point comes from a saved scheduler state. The video does not interpolate imaginary denoising states or portray its offline samples as executed plans.
+
+Scientific figures use Matplotlib's default style, standard axes, tab10 colors and labelled units. Trajectory overlays use the documented Matplotlib scatter/colorbar APIs with the plasma colormap. This is an independently implemented ChicGrasp renderer inspired by the official Diffusion Policy video; it is not an upstream released rendering script. PNG exports are 300 dpi, with PDF and SVG companions.
+
+The original 84-second edit and its renderer remain available as earlier versions. The current README and project page use the revised videos and plots.
 
 ## 1. Recreate tables and training curves
 

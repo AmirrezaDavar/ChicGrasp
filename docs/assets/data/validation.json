@@ -1,6 +1,12 @@
 {
+  "process_replay_arrays": "3 observations \u00d7 17 states \u00d7 6 candidates \u00d7 16 actions \u00d7 8 values; final outputs and all displayed iterations verified",
+  "image_projection": {
+    "kind": "estimated_local_displacement_projection",
+    "held_out_rmse_px": 1.763675712377981,
+    "scope": "Local tracked displacement only; not absolute camera calibration"
+  },
   "status": "passed",
-  "local_links_checked": 94,
+  "local_links_checked": 111,
   "table_arithmetic": "passed",
   "replay_arrays": "3 \u00d7 101 \u00d7 16 \u00d7 8; finite; final arrays match policy output; trained action slices agree",
   "recorded_jaw_transitions": "right 20.6 s; left 21.1 s",
@@ -16,6 +22,39 @@
       "bytes": 7109678,
       "full_decode": "passed",
       "sha256": "071cd12bb8fc2e0d04af461a394194a9a0327baeae4f1f3bf6427fd03a0757bd"
+    },
+    {
+      "file": "chicgrasp_action_process.mp4",
+      "width": 1280,
+      "height": 720,
+      "fps": "30/1",
+      "frames": 328,
+      "duration_seconds": 10.934,
+      "bytes": 3463671,
+      "full_decode": "passed",
+      "sha256": "9b3f8debaeb4a6babc87d7b1c8153a8dc586836073bad3d6bd08d55c5f615103"
+    },
+    {
+      "file": "chicgrasp_action_process_clean.mp4",
+      "width": 1280,
+      "height": 720,
+      "fps": "30/1",
+      "frames": 328,
+      "duration_seconds": 10.934,
+      "bytes": 3433576,
+      "full_decode": "passed",
+      "sha256": "c4d77d1aa6a00c9fde61e1c0f240c449c82d269604042ba6e06b6ff4756493ea"
+    },
+    {
+      "file": "chicgrasp_overview_80s.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": "24/1",
+      "frames": 1920,
+      "duration_seconds": 80.0,
+      "bytes": 12725200,
+      "full_decode": "passed",
+      "sha256": "a1bed038e1fb8edd80c975e4cfeeefe3a7cddc265ff0e188c941cc701f3e536a"
     },
     {
       "file": "diffusion_action_generation.mp4",

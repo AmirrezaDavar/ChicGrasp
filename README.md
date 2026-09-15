@@ -1,117 +1,79 @@
 # ChicGrasp
 
-### Robot learning for delicate, irregular handling
+Imitation-Learning-Based Customized Dual-Jaw Gripper Control for Manipulation of Delicate, Irregular Bio-Products
 
-A **custom dual-jaw pneumatic gripper** and a **diffusion policy** coordinate a UR10e robot and two independent jaw commands to grasp poultry carcasses. A scripted transfer completes the rehang.
+Amirreza Davar, Zhengtong Xu, Siavash Mahmoudi, Pouya Sohrabipour, Chaitanya Pallerla, Yu She, Wan Shou, Philip Glen Crandall, and Dongyi Wang. *Advanced Robotics Research*, 2026.
 
-**[Paper](https://doi.org/10.1002/adrr.202500149)** · **[84-second film](docs/assets/media/chicgrasp_84s.mp4)** · **[Interactive project page](docs/index.html)** · **[Data & checkpoints](https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p)** · **[Reproduce the figures](presentation/README.md)**
+[Paper](https://doi.org/10.1002/adrr.202500149) · [Project page](docs/index.html) · [Data and checkpoints](https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p) · [80-second overview](docs/assets/media/chicgrasp_overview_80s.mp4)
 
-[![ChicGrasp: custom gripper, real-robot demonstration, and published results](docs/assets/figures/hero.jpg)](docs/assets/media/chicgrasp_84s.mp4)
+ChicGrasp combines a customized pneumatic gripper with a diffusion policy to grasp poultry carcasses using a UR10e robot. The policy predicts robot motion and two independent jaw commands. A scripted waypoint sequence completes the rehang.
 
-| Published result | Demonstrations | Task commands | Reported total cycle |
-| :--- | :--- | :--- | :--- |
-| **113 / 140 successes (80.71%)** | **100** teleoperated trajectories | **XYZ + two independent jaws** | **≈38 s** including scripted rehang |
+## Action generation
 
-*Davar et al., Advanced Robotics Research, 2026. Success requires a two-leg grasp, lift, and completed scripted rehang. These are published study results; the supplied recordings have not been independently relabeled as the paper’s full trial set.*
+[![Actual denoising trajectories over recorded ChicGrasp footage](docs/assets/figures/action_process_poster.jpg)](docs/assets/media/chicgrasp_action_process.mp4)
 
-## What I built
+[Watch the 11-second process video](docs/assets/media/chicgrasp_action_process.mp4) · [Overlay-only version](docs/assets/media/chicgrasp_action_process_clean.mp4)
 
-I led ChicGrasp from gripper design through real-robot evaluation:
+At each pause, six independent noise samples converge over 16 DDIM iterations. Color indicates future action index; the inset shows predicted jaw values for one candidate. These are actual offline checkpoint outputs. The camera overlay uses an estimated local projection, and the resumed footage is the original recording at 4× speed. The displayed plans were not executed. [Replay and projection details](docs/evidence.html#process).
 
-- **Hardware:** custom jaw geometry, gripper fabrication, pneumatic actuation, and robot attachment.
-- **Data:** multiview teleoperation, robot and jaw logging, and observation–action dataset integration.
-- **Learning:** diffusion-policy training and comparisons with IBC and LSTM-GMM.
-- **Deployment:** UR10e integration, Arduino jaw commands, replay, and hardware evaluation.
+## Method
 
-**Amirreza Davar · First author.** The [paper](https://doi.org/10.1002/adrr.202500149) credits the full research team. ChicGrasp builds on the [official Diffusion Policy implementation](https://github.com/real-stanford/diffusion_policy) by Chi et al.
+![Observation history, visual encoding, action denoising, and receding-horizon robot control](docs/assets/figures/policy_pipeline.svg)
 
-## How it works
-
-![ChicGrasp observation, denoising, robot and jaw command, and scripted rehang pipeline](docs/assets/figures/policy_pipeline.svg)
-
-1. **Observe:** collect RGB camera views, robot state, and the two jaw states.
-2. **Generate:** condition a diffusion model on recent observations and iteratively refine future actions.
-3. **Act:** decode robot targets and jaw commands, execute a short prefix, and update the plan with new observations.
-4. **Rehang:** use a fixed waypoint sequence for transfer to the shackle.
-
-The paper describes five task commands: `[x, y, z, left_jaw, right_jaw]`. The archived code and checkpoint store **eight values**, retaining three orientation components:
+The archived checkpoint uses three RGB views, end-effector pose, and both jaw states. Its stored action has eight values:
 
 ```text
 [x, y, z, rx, ry, rz, left_jaw, right_jaw]
 ```
 
-Jaw convention: **0 = closed, 1 = open**. Raw jaw predictions are rounded and clipped to `[0, 1]`. The supplied checkpoint conditions on three RGB views, end-effector pose, and both jaw states. See [implementation and paper differences](docs/evidence.html#differences) for exact settings.
+The paper describes five task commands: XYZ and the two jaws. The stored tensor also retains three orientation values. Jaw predictions are rounded and clipped to binary commands: **0 = closed, 1 = open**. See [paper and implementation settings](docs/evidence.html#differences).
 
-### Watch the policy generate an action
+![Captured denoising iterations for Cartesian targets and independent jaw values](docs/assets/figures/diffusion_denoising.svg)
 
-[![Actual diffusion-policy denoising steps for robot and gripper commands](docs/assets/figures/diffusion_denoising.png)](docs/assets/media/diffusion_action_generation.mp4)
+A separate replay at the checkpoint's original 100-iteration setting shows normalized XYZ with fixed axes and raw jaw values. [Interactive explorer](docs/index.html#actions) · [Figure PDF](docs/assets/figures/diffusion_denoising.pdf) · [Final action sequence in physical units](docs/assets/figures/final_action_sequence.pdf).
 
-**[Action-generation video](docs/assets/media/diffusion_action_generation.mp4)** · **[Interactive explorer](docs/index.html#actions)** · **[Vector figure](docs/assets/figures/diffusion_denoising.svg)** · **[Provenance](docs/assets/data/denoising_provenance.json)**
-
-The animation contains **actual intermediate model outputs**: 100 DDIM iterations from the supplied EMA checkpoint at three recorded observations. This is a new offline replay, with approximate video/state alignment. These newly sampled plans were not executed on the robot and are separate from the original command log.
-
-### Inspect the gripper and recorded commands
-
-![Local ChicGrasp CAD assembly with independent jaw groups highlighted](docs/assets/figures/gripper_cad.png)
-
-**[CAD orbit](docs/assets/media/gripper_cad_orbit.mp4)** · **[Recorded robot and jaw timeline](docs/assets/figures/recorded_actions.png)**
-
-In recorded evaluation episode 14, the right-jaw command closes at **20.6 s** and the left-jaw command at **21.1 s**. These are command transitions, not measurements of gripping force or contact.
-
-## Published evaluation
+## Published results
 
 | Method | Seen carcasses | Unseen carcasses | Overall |
-| :--- | ---: | ---: | ---: |
-| **Diffusion Policy** | **84 / 100 (84.0%)** | **29 / 40 (72.5%)** | **113 / 140 (80.71%)** |
-| IBC | 0 / 100 | 0 / 40 | 0 / 140 |
-| LSTM-GMM | 0 / 100 | 0 / 40 | 0 / 140 |
+| --- | ---: | ---: | ---: |
+| Diffusion Policy | 84/100 (84.0%) | 29/40 (72.5%) | 113/140 (80.71%) |
+| IBC | 0/100 | 0/40 | 0/140 |
+| LSTM-GMM | 0/100 | 0/40 | 0/140 |
 
-![Published success-rate comparison and per-chicken diffusion-policy results](docs/assets/figures/published_results.svg)
+![Published method comparison and per-carcass success rates](docs/assets/figures/published_results.svg)
 
-- Ten trials per carcass, fourteen carcasses per method.
-- Seen: ten carcasses used during demonstration collection, evaluated under nominal conditions.
-- Unseen: four held-out carcasses, with **12 nominal + 28 disturbed trials** in total.
-- Reported grasp phase: approximately **28 s**. Total successful cycle including scripted rehang: approximately **38 s**.
+The study reports 100 demonstrations and ten evaluation trials on each of fourteen carcasses per method. Success requires a two-leg grasp, lift, and completed scripted rehang. The reported successful cycle is approximately 38 seconds. These results describe a laboratory prototype handling individually presented carcasses.
 
-Tables are reconstructed from **Table 4 of the paper**, with [per-chicken counts](docs/assets/data/published_results.csv) and [aggregates](docs/assets/data/published_summary.csv). One disturbed-trial subtotal in the paper is inconsistent with its rows; the [source audit](docs/evidence.html#results) records the discrepancy. The headline 113/140 and seen/unseen totals agree with the rows.
+Counts are transcribed from Table 4 of the paper. The supplied recordings have not been independently mapped to all published trial outcomes. An inconsistent disturbed-trial subtotal is documented in the [source notes](docs/evidence.html#results); the headline and seen/unseen totals agree with the per-carcass rows. [CSV](docs/assets/data/published_results.csv) · [Figure PDF](docs/assets/figures/published_results.pdf).
 
-<details>
-<summary><strong>Training curves and interpretation</strong></summary>
+### Training curves
 
-![Training curves for Diffusion Policy, IBC, and LSTM-GMM](docs/assets/figures/training_curves.svg)
+![Training curves from the supplied archives](docs/assets/figures/training_curves.svg)
 
-Each model optimizes a different objective, so loss magnitudes should not be compared across methods. Curves use the last logged loss per epoch without smoothing. The archived LSTM-GMM log extends to 470 epochs with resume history; the paper reports 450. See the [source audit](docs/evidence.html#training).
+Last logged loss per epoch, without smoothing. The objectives have different scales and should not be ranked by loss magnitude. The LSTM-GMM archive extends to 470 epochs with resume history; the paper reports 450. [Logs and interpretation](docs/evidence.html#training) · [Figure PDF](docs/assets/figures/training_curves.pdf).
 
-</details>
+## Gripper and recorded commands
 
-### Scope
+![Customized dual-jaw gripper assembly](docs/assets/figures/gripper_cad.png)
 
-ChicGrasp demonstrates learned grasping on individually presented carcasses in a laboratory prototype. Rehanging remains scripted. The reported cycle time and success rate do not establish production-line throughput or fully learned rehanging.
+The local CAD assembly preserves the composed geometry; display colors distinguish the two jaw groups. The camera holder is omitted. [CAD provenance](docs/assets/data/cad_provenance.json).
+
+In evaluation episode 14, the recorded right-jaw command closes at 20.6 s and the left-jaw command at 21.1 s. [Recorded robot and jaw plot](docs/assets/figures/recorded_actions.pdf) · [Numerical trace](docs/assets/data/recorded_episode.json).
+
+### CAD files
+
+- [Dual-jaw gripper assembly](https://cad.onshape.com/documents/59651785fc8216c351878e9e/w/96ccd4d006239148f4499ab2/e/caa066b5de7d7eefbd6d0296)
+- [Jaw finger](https://cad.onshape.com/documents/f9923c0a774e494641001547/w/5449e3aa08570ad5e1bd725d/e/4c4594f9492c86e876574dad)
+- [Flange](https://cad.onshape.com/documents/2ba3c05d30474bc51e5caf05/w/b2a50accccf850db7a426ca7/e/8b4a64de694fb9754597638f)
+- [Camera holder](https://cad.onshape.com/documents/1ce782597a880b6af038303f/w/750def440809f62fce0fa768/e/c56676c9f0502747cf60a721)
+
+## My contribution
+
+I designed and fabricated the gripper, collected and integrated the demonstrations, trained the policies and baselines, and implemented the robot deployment and experimental evaluation. — Amirreza Davar
+
+The paper credits the full research team. ChicGrasp builds on the [Diffusion Policy implementation](https://github.com/real-stanford/diffusion_policy) by Chi et al.
 
 ## Code and data
-
-| Location | Purpose |
-| :--- | :--- |
-| [diffusion_policy/](diffusion_policy/) | Policies, datasets, workspaces, and real-world integration |
-| [train.py](train.py) | Train a configured policy |
-| [demo_real_robot.py](demo_real_robot.py) | Collect teleoperated demonstrations |
-| [eval_real_robot.py](eval_real_robot.py) | Run a policy on the real system |
-| [docs/](docs/) | Project page, figures, small data exports, and videos |
-| [presentation/](presentation/) | Rebuild tables, plots, denoising traces, and the film |
-
-Large files live in the existing **[ChicGrasp data archive](https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p)**. The local snapshot inspected for this presentation contains:
-
-```text
-ChicGrasp-data/
-├── training/        # checkpoint_dp.zip, checkpoint_ibc.zip, checkpoint_lstm-gmm.zip
-├── experiments/     # replay_buffer_{dp,ibc,lstm-gmm}.zarr.zip
-├── videos/          # dp_eval/, ibc_eval/, lstm-gmm_eval/
-└── Previous Stuff/  # original edited video and narration assets
-```
-
-The folder named `training/` in this snapshot contains checkpoints and logs. A complete 100-demonstration training dataset was not identified in it. The [inventory](docs/assets/data/source_inventory.json) records exactly what was available. Download from Box and retain the archive layout; this repository does not include automated download scripts.
-
-### Installation
 
 ```bash
 git clone https://github.com/AmirrezaDavar/ChicGrasp.git
@@ -121,31 +83,27 @@ conda activate chicgrasp_real
 pip install -e .
 ```
 
-See [setup and real-robot usage](docs/setup.md) for collection, training, and evaluation commands. Hardware configuration remains machine-specific. The presentation refresh does not change the controller or validate a fresh installation of all legacy dependencies.
+[Setup and real-robot usage](docs/setup.md) covers collection, training, and evaluation. Hardware configuration remains machine-specific.
 
-To view the interactive page locally:
+- [diffusion_policy/](diffusion_policy/): policies, datasets, and robot integration.
+- [train.py](train.py), [demo_real_robot.py](demo_real_robot.py), and [eval_real_robot.py](eval_real_robot.py): training, collection, and deployment entry points.
+- [presentation/](presentation/README.md): reproduce the tables, Matplotlib figures, and videos.
+- [docs/](docs/): static project page and selected data exports.
+
+Large files are hosted in the [data archive](https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p). The inspected snapshot contains checkpoint/log ZIPs in `training/`, state/action replay buffers in `experiments/`, evaluation recordings in `videos/`, and previous media in `Previous Stuff/`. A complete 100-demonstration training dataset was not identified in this snapshot. The [inventory](docs/assets/data/source_inventory.json) records available files.
+
+To view the project page locally:
 
 ```bash
 python -m http.server 8000 --directory docs
 # Open http://localhost:8000
 ```
 
-The page also works when `docs/index.html` is opened directly. GitHub renders this README; the interactive page can be served through GitHub Pages using `docs/`.
-
-## CAD resources
-
-- [Dual-jaw gripper assembly](https://cad.onshape.com/documents/59651785fc8216c351878e9e/w/96ccd4d006239148f4499ab2/e/caa066b5de7d7eefbd6d0296)
-- [Jaw finger](https://cad.onshape.com/documents/f9923c0a774e494641001547/w/5449e3aa08570ad5e1bd725d/e/4c4594f9492c86e876574dad)
-- [Flange](https://cad.onshape.com/documents/2ba3c05d30474bc51e5caf05/w/b2a50accccf850db7a426ca7/e/8b4a64de694fb9754597638f)
-- [Camera holder](https://cad.onshape.com/documents/1ce782597a880b6af038303f/w/750def440809f62fce0fa768/e/c56676c9f0502747cf60a721)
-
-The new CAD render uses the local USD assembly with composed geometry preserved. It omits the camera holder and adds presentation colors. [CAD provenance](docs/assets/data/cad_provenance.json).
-
 ## Ongoing work: Isaac Lab
 
-[![Ongoing Isaac Lab workbench](docs/assets/figures/film_review_70.jpg)](docs/assets/media/simulation_workbench.mp4)
+[![Isaac Lab simulation workbench](docs/assets/figures/simulation_preview.jpg)](docs/assets/media/simulation_workbench.mp4)
 
-A separate simulation workbench studies articulated anatomy, grasp retention, and shackle contact. The cinematic excerpt shows a **held practice configuration**. A repeatable released two-hock hang is not yet verified. This work is separate from the published hardware evaluation.
+A separate simulation workbench studies articulated anatomy, grasp retention, and shackle contact. The excerpt shows a held practice configuration; a repeatable released two-hock hang has not been verified. This work is separate from the published hardware study.
 
 ## Citation
 
@@ -161,4 +119,4 @@ A separate simulation workbench studies articulated anatomy, grasp retention, an
 }
 ```
 
-**Acknowledgment:** ChicGrasp extends [Diffusion Policy](https://github.com/real-stanford/diffusion_policy). The action-explanation layout is inspired by its [project page](https://diffusion-policy.cs.columbia.edu/); the displayed hardware, CAD, checkpoint traces, and results are ChicGrasp assets. The [original video](https://www.youtube.com/watch?v=IURYkUaIiIM) is retained as project history; its older results slide should not replace the published 2026 table.
+The process video's visual approach follows the [Diffusion Policy project page](https://diffusion-policy.cs.columbia.edu/). All displayed trajectories, recordings, CAD, and results are ChicGrasp assets. The [original project video](https://www.youtube.com/watch?v=IURYkUaIiIM) is retained as project history.

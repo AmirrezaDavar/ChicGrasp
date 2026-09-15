@@ -71,7 +71,24 @@ def main():
             assert (v['width'],v['height'],v['r_frame_rate'],int(v['nb_frames']))==(1920,1080,'24/1',2016)
         assert v['pix_fmt']=='yuv420p' and v['codec_name']=='h264'
         probes.append(dict(file=file.name,width=v['width'],height=v['height'],fps=v['r_frame_rate'],frames=int(v['nb_frames']),duration_seconds=duration,bytes=file.stat().st_size,full_decode='passed',sha256=hashlib.sha256(file.read_bytes()).hexdigest()))
-    assert len(probes)==7
+    required={'chicgrasp_action_process.mp4','chicgrasp_action_process_clean.mp4','chicgrasp_overview_80s.mp4','chicgrasp_84s.mp4'}
+    assert required.issubset({p['file'] for p in probes})
+    for p in probes:
+        if p['file'].startswith('chicgrasp_action_process'):
+            assert (p['width'],p['height'],p['fps'],p['frames'])==(1280,720,'30/1',328)
+        if p['file']=='chicgrasp_overview_80s.mp4':
+            assert (p['width'],p['height'],p['fps'],p['frames'],p['duration_seconds'])==(1920,1080,'24/1',1920,80.0)
+    process=np.load(DATA/'process/denoising_trace.npz')
+    for i in range(3):
+        trace=process[f'physical_{i}'];assert trace.shape==(17,6,16,8) and np.isfinite(trace).all()
+        np.testing.assert_allclose(trace[-1],process[f'action_pred_{i}'],atol=1e-6)
+        np.testing.assert_allclose(trace[-1,:,1:16],process[f'action_{i}'],atol=1e-6)
+    projection=json.loads((DATA/'process/projection.json').read_text())
+    assert projection['held_out_rmse_px']<5
+    edit=json.loads((DATA/'process/render_provenance.json').read_text())
+    for i in range(3):
+        frames=[x for x in edit['timeline'] if x['sample']==i]
+        assert all(sum(x['iteration']==step for x in frames)>=2 for step in range(17))
     cff=yaml.safe_load((ROOT/'CITATION.cff').read_text());assert cff['preferred-citation']['year']==2026 and len(cff['preferred-citation']['authors'])==9
     vtt=(ROOT/'docs/assets/media/chicgrasp_84s.vtt').read_text()
     def seconds(stamp):
@@ -82,7 +99,14 @@ def main():
     for start,end in re.findall(r'(\d+:\d+\.\d+) --> (\d+:\d+\.\d+)',vtt):
         s,e=seconds(start),seconds(end);assert s>=previous and e>s and e<=84;previous=e
     assert previous==84
-    report=dict(status='passed',local_links_checked=checked,table_arithmetic='passed',
+    overview_vtt=(ROOT/'docs/assets/media/chicgrasp_overview_80s.vtt').read_text()
+    previous=0
+    for start,end in re.findall(r'(\d+:\d+\.\d+) --> (\d+:\d+\.\d+)',overview_vtt):
+        begin,finish=seconds(start),seconds(end);assert begin>=previous and finish>begin and finish<=80;previous=finish
+    assert previous==80
+    report=dict(process_replay_arrays='3 observations × 17 states × 6 candidates × 16 actions × 8 values; final outputs and all displayed iterations verified',
+                image_projection=dict(kind=projection['kind'],held_out_rmse_px=projection['held_out_rmse_px'],scope='Local tracked displacement only; not absolute camera calibration'),
+                status='passed',local_links_checked=checked,table_arithmetic='passed',
                 replay_arrays='3 × 101 × 16 × 8; finite; final arrays match policy output; trained action slices agree',
                 recorded_jaw_transitions='right 20.6 s; left 21.1 s',caption_timing='passed',
                 videos=probes,scope='Artifact validation only. No hardware evaluation or independent re-labeling of published trials.',

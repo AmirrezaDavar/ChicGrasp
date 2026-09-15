@@ -4,7 +4,7 @@
   const data=window.CHICGRASP_DATA;
   const $=id=>document.getElementById(id);
   if(!data){$('actionReadout').textContent='The trace data could not load. Download the action-generation video below.';return;}
-  const color={teal:'#65d6c5',gold:'#f6b66d',blue:'#80b7f4',dim:'#9cb8c2',white:'#edf4f5',grid:'#35515c'};
+  const color={teal:'#1f77b4',gold:'#ff7f0e',blue:'#2ca02c',dim:'#555555',white:'#444444',grid:'#cccccc'};
   let animation=null;
   function setup(id){const c=$(id),r=c.getBoundingClientRect(),dpr=window.devicePixelRatio||1;c.width=Math.round(r.width*dpr);c.height=Math.round(r.height*dpr);const ctx=c.getContext('2d');ctx.scale(dpr,dpr);return {ctx,w:r.width,h:r.height};}
   function line(ctx,pts,stroke,width=2){ctx.strokeStyle=stroke;ctx.lineWidth=width;ctx.beginPath();pts.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.stroke();}

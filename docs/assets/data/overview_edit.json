@@ -1,0 +1,47 @@
+{
+  "duration": 80,
+  "fps": 24,
+  "segments": [
+    [
+      0,
+      5,
+      "Title and hardware"
+    ],
+    [
+      5,
+      13,
+      "Custom gripper"
+    ],
+    [
+      13,
+      25,
+      "Observation and action representation"
+    ],
+    [
+      25,
+      36,
+      "Offline diffusion replay, estimated image projection"
+    ],
+    [
+      36,
+      48,
+      "Recorded jaw closure at half speed"
+    ],
+    [
+      48,
+      62,
+      "Published evaluation"
+    ],
+    [
+      62,
+      72,
+      "Separate ongoing simulation"
+    ],
+    [
+      72,
+      80,
+      "Technical contributions and project links"
+    ]
+  ],
+  "source": "Supplied hardware recordings, actual offline checkpoint traces, local CAD, published counts, and existing simulation cinematic"
+}
