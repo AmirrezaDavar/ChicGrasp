@@ -1,0 +1,406 @@
+{
+  "archives": [
+    {
+      "path": "experiments/replay_buffer_dp.zarr.zip",
+      "bytes": 5234033,
+      "members": 451,
+      "uncompressed_bytes": 5134532
+    },
+    {
+      "path": "experiments/replay_buffer_ibc.zarr.zip",
+      "bytes": 2152989,
+      "members": 334,
+      "uncompressed_bytes": 2077559
+    },
+    {
+      "path": "experiments/replay_buffer_lstm-gmm.zarr.zip",
+      "bytes": 186521,
+      "members": 64,
+      "uncompressed_bytes": 172978
+    },
+    {
+      "path": "training/checkpoint_dp.zip",
+      "bytes": 11109564702,
+      "members": 26,
+      "uncompressed_bytes": 12904286092
+    },
+    {
+      "path": "training/checkpoint_ibc.zip",
+      "bytes": 962097256,
+      "members": 26,
+      "uncompressed_bytes": 1271778557
+    },
+    {
+      "path": "training/checkpoint_lstm-gmm.zip",
+      "bytes": 3920417421,
+      "members": 149,
+      "uncompressed_bytes": 4466472024
+    }
+  ],
+  "videos": {
+    "dp_eval": {
+      "files": 426,
+      "episodes": 142,
+      "cameras": {
+        "2": 142,
+        "1": 142,
+        "0": 142
+      }
+    },
+    "ibc_eval": {
+      "files": 9,
+      "episodes": 3,
+      "cameras": {
+        "1": 3,
+        "2": 3,
+        "0": 3
+      }
+    },
+    "lstm-gmm_eval": {
+      "files": 9,
+      "episodes": 3,
+      "cameras": {
+        "1": 3,
+        "2": 3,
+        "0": 3
+      }
+    }
+  },
+  "replay_buffers": {
+    "dp": {
+      "episodes": 142,
+      "steps": 56305,
+      "arrays": {
+        "action": {
+          "shape": [
+            56305,
+            8
+          ],
+          "dtype": "float32"
+        },
+        "left_jaw": {
+          "shape": [
+            56305,
+            1
+          ],
+          "dtype": "float64"
+        },
+        "right_jaw": {
+          "shape": [
+            56305,
+            1
+          ],
+          "dtype": "float64"
+        },
+        "robot_eef_pose": {
+          "shape": [
+            56305,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_eef_pose_vel": {
+          "shape": [
+            56305,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_joint": {
+          "shape": [
+            56305,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_joint_vel": {
+          "shape": [
+            56305,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "stage": {
+          "shape": [
+            56305
+          ],
+          "dtype": "int64"
+        },
+        "timestamp": {
+          "shape": [
+            56305
+          ],
+          "dtype": "float64"
+        }
+      },
+      "sha256": "d274fea83eccbc151f1fa4bcb550ceabf29036314ef1c0b2f6b6a07a5eed011a"
+    },
+    "ibc": {
+      "episodes": 101,
+      "steps": 15388,
+      "arrays": {
+        "action": {
+          "shape": [
+            15388,
+            8
+          ],
+          "dtype": "float32"
+        },
+        "left_jaw": {
+          "shape": [
+            15388,
+            1
+          ],
+          "dtype": "float64"
+        },
+        "right_jaw": {
+          "shape": [
+            15388,
+            1
+          ],
+          "dtype": "float64"
+        },
+        "robot_eef_pose": {
+          "shape": [
+            15388,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_eef_pose_vel": {
+          "shape": [
+            15388,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_joint": {
+          "shape": [
+            15388,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_joint_vel": {
+          "shape": [
+            15388,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "stage": {
+          "shape": [
+            15388
+          ],
+          "dtype": "int64"
+        },
+        "timestamp": {
+          "shape": [
+            15388
+          ],
+          "dtype": "float64"
+        }
+      },
+      "sha256": "1c5a1ea6f8054768cb33810b649ea18386ef7788ce3b5df75a13dbbbec1f056d"
+    },
+    "lstm-gmm": {
+      "episodes": 3,
+      "steps": 1283,
+      "arrays": {
+        "action": {
+          "shape": [
+            1283,
+            8
+          ],
+          "dtype": "float32"
+        },
+        "left_jaw": {
+          "shape": [
+            1283,
+            1
+          ],
+          "dtype": "float64"
+        },
+        "right_jaw": {
+          "shape": [
+            1283,
+            1
+          ],
+          "dtype": "float64"
+        },
+        "robot_eef_pose": {
+          "shape": [
+            1283,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_eef_pose_vel": {
+          "shape": [
+            1283,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_joint": {
+          "shape": [
+            1283,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "robot_joint_vel": {
+          "shape": [
+            1283,
+            6
+          ],
+          "dtype": "float64"
+        },
+        "stage": {
+          "shape": [
+            1283
+          ],
+          "dtype": "int64"
+        },
+        "timestamp": {
+          "shape": [
+            1283
+          ],
+          "dtype": "float64"
+        }
+      },
+      "sha256": "3fc5924d71c15c944fc0e1805540876faa281fa4cef6e20aa91623a29176292a"
+    }
+  },
+  "training_runs": [
+    {
+      "method": "dp",
+      "archive": "checkpoint_dp.zip",
+      "log_member": "outputs/blah/logs.json.txt",
+      "unique_steps": 167850,
+      "invalid_lines": 0,
+      "epochs": 450,
+      "first_epoch": 0,
+      "last_epoch": 449,
+      "first_loss": 0.32832534719088763,
+      "last_loss": 0.001223653459139031,
+      "csv": "training_dp_0.csv",
+      "configs": [
+        {
+          "member": "outputs/blah/wandb/run-20251107_212014-lrq7r7lt/files/config.yaml",
+          "horizon": 16,
+          "n_obs_steps": 2,
+          "n_action_steps": 6,
+          "training": {
+            "checkpoint_every": 50,
+            "debug": false,
+            "device": "cuda:0",
+            "freeze_encoder": false,
+            "gradient_accumulate_every": 1,
+            "lr_scheduler": "cosine",
+            "lr_warmup_steps": 500,
+            "max_train_steps": null,
+            "max_val_steps": null,
+            "num_epochs": 450,
+            "resume": true,
+            "rollout_every": 50,
+            "sample_every": 5,
+            "seed": 42,
+            "tqdm_interval_sec": 1,
+            "use_ema": true,
+            "val_every": 1
+          },
+          "action_shape": {
+            "shape": [
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "method": "ibc",
+      "archive": "checkpoint_ibc.zip",
+      "log_member": "checkpoint_ibc/blah/logs.json.txt",
+      "unique_steps": 174150,
+      "invalid_lines": 0,
+      "epochs": 450,
+      "first_epoch": 0,
+      "last_epoch": 449,
+      "first_loss": 2.1967434391478022,
+      "last_loss": 0.0,
+      "csv": "training_ibc_1.csv",
+      "configs": [
+        {
+          "member": "checkpoint_ibc/blah/wandb/run-20251110_200932-wwvqsokt/files/config.yaml",
+          "horizon": 2,
+          "n_obs_steps": 2,
+          "n_action_steps": 1,
+          "training": {
+            "checkpoint_every": 5,
+            "debug": false,
+            "device": "cuda:0",
+            "gradient_accumulate_every": 1,
+            "lr_scheduler": "cosine",
+            "lr_warmup_steps": 500,
+            "max_train_steps": null,
+            "max_val_steps": null,
+            "num_epochs": 450,
+            "resume": true,
+            "rollout_every": 50,
+            "sample_every": 5,
+            "sample_max_batch": 128,
+            "seed": 42,
+            "tqdm_interval_sec": 1,
+            "val_every": 1
+          },
+          "action_shape": {
+            "shape": [
+              8
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "method": "lstm-gmm",
+      "archive": "checkpoint_lstm-gmm.zip",
+      "log_member": "checkpoint_lstm-gmm/blah/logs.json.txt",
+      "unique_steps": 353349,
+      "invalid_lines": 0,
+      "epochs": 470,
+      "first_epoch": 0,
+      "last_epoch": 469,
+      "first_loss": -19.383517186245687,
+      "last_loss": -52.93781661987305,
+      "csv": "training_lstm-gmm_2.csv",
+      "configs": [
+        {
+          "member": "checkpoint_lstm-gmm/blah/wandb/run-20251119_094214-uel0hwhd/files/config.yaml",
+          "horizon": 10,
+          "n_obs_steps": 2,
+          "n_action_steps": 1,
+          "training": {
+            "checkpoint_every": 50,
+            "debug": false,
+            "device": "cuda:0",
+            "max_train_steps": null,
+            "max_val_steps": null,
+            "num_epochs": 450,
+            "resume": true,
+            "rollout_every": 50,
+            "sample_every": 5,
+            "seed": 42,
+            "tqdm_interval_sec": 1,
+            "val_every": 1
+          },
+          "action_shape": {
+            "shape": [
+              8
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

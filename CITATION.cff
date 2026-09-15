@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "Please cite the ChicGrasp article when using this work."
+title: ChicGrasp
+type: software
+authors:
+  - family-names: Davar
+    given-names: Amirreza
+repository-code: https://github.com/AmirrezaDavar/ChicGrasp
+preferred-citation:
+  type: article
+  title: "ChicGrasp: Imitation-Learning-Based Customized Dual-Jaw Gripper Control for Manipulation of Delicate, Irregular Bio-Products"
+  authors:
+    - family-names: Davar
+      given-names: Amirreza
+    - family-names: Xu
+      given-names: Zhengtong
+    - family-names: Mahmoudi
+      given-names: Siavash
+    - family-names: Sohrabipour
+      given-names: Pouya
+    - family-names: Pallerla
+      given-names: Chaitanya
+    - family-names: She
+      given-names: Yu
+    - family-names: Shou
+      given-names: Wan
+    - family-names: Crandall
+      given-names: Philip Glen
+    - family-names: Wang
+      given-names: Dongyi
+  journal: Advanced Robotics Research
+  year: 2026
+  doi: 10.1002/adrr.202500149
+  url: https://doi.org/10.1002/adrr.202500149

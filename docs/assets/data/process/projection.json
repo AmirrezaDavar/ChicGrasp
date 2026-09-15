@@ -1,0 +1,54 @@
+{
+  "kind": "estimated_local_displacement_projection",
+  "episode": 14,
+  "camera": 2,
+  "image_size": [
+    1280,
+    720
+  ],
+  "matrix_xyz1_to_uv": [
+    [
+      -608.720259038727,
+      -568.8671113862729
+    ],
+    [
+      -1195.6168388923634,
+      389.0865933515354
+    ],
+    [
+      -155.75148841128336,
+      -1219.1341832519315
+    ],
+    [
+      -368.0972560698997,
+      538.372073029908
+    ]
+  ],
+  "video_to_state_offset_seconds": -0.2799999999999999,
+  "anchor_image_px": [
+    535.0,
+    190.0
+  ],
+  "anchor_description": "Manually selected midpoint between visible jaws in first frame, not a calibrated TCP location.",
+  "tracking": "Pyramidal Lucas-Kanade flow on rigid pneumatic-body corners; median displacement of persistent features; forward-backward error <0.5 px.",
+  "initial_features": 60,
+  "final_features": 60,
+  "split": "Fit on even-numbered two-second video blocks; validate on odd blocks. Offset selected on training blocks only.",
+  "held_out_rmse_px": 1.763675712377981,
+  "held_out_p95_px": 4.114010588009238,
+  "held_out_max_px": 5.277670794827665,
+  "training_rmse_px": 1.5902225597575004,
+  "fitted_xyz_range_m": [
+    [
+      -0.010744,
+      -0.753436,
+      0.016409
+    ],
+    [
+      0.039216,
+      -0.643093,
+      0.049985
+    ]
+  ],
+  "limitations": "Local affine displacement estimate for this fixed view and nearly fixed gripper orientation. The origin is illustrative. No measured intrinsics/extrinsics are available. Intermediate noisy positions extend beyond the fitted motion volume and are extrapolated. Not a camera calibration, executed-plan reconstruction, or metric validation of predicted targets."
+}

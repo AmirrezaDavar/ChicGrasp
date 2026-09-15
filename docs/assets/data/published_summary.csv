@@ -1,0 +1,10 @@
+method,split,successes,trials,success_percent
+Diffusion Policy,all,113,140,80.71
+Diffusion Policy,seen,84,100,84.0
+Diffusion Policy,unseen,29,40,72.5
+IBC,all,0,140,0.0
+IBC,seen,0,100,0.0
+IBC,unseen,0,40,0.0
+LSTM-GMM,all,0,140,0.0
+LSTM-GMM,seen,0,100,0.0
+LSTM-GMM,unseen,0,40,0.0

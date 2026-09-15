@@ -1,0 +1,1989 @@
+{
+  "reference": "https://diffusion-policy.cs.columbia.edu/",
+  "reference_local": "/media/wanglab22/Expansion/highlight_pusht_process.mp4",
+  "source_video": "videos/dp_eval/14/2.mp4",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "frames": 328,
+  "duration_seconds": 10.933333333333334,
+  "playback_speed": 4,
+  "candidate_count": 6,
+  "inference_steps": 16,
+  "prediction_horizon": 16,
+  "returned_action_steps": 15,
+  "renderer": "Matplotlib Agg, plasma colormap; FFmpeg H.264",
+  "interpolation": "None between model states. Each captured iteration is held for at least two frames.",
+  "interpretation": "Actual offline samples from the supplied checkpoint. Playback after pauses is the original recording, not execution of the displayed samples. Frame/state alignment uses elapsed time and is approximate. Projected positions use a local motion estimate, not a measured camera calibration.",
+  "jaw_display": "Raw values from candidate 1; 0 closed, 1 open after rounding and clipping. Other candidates are displayed in the image overlay only.",
+  "timeline": [
+    {
+      "source_time": 0.0,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 0.13157894736842105,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 0.2631578947368421,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 0.39473684210526316,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 0.5263157894736842,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 0.6578947368421053,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 0.7894736842105263,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 0.9210526315789473,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 1.0526315789473684,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 1.1842105263157894,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 1.3157894736842106,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 1.4473684210526316,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 1.5789473684210527,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 1.7105263157894737,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 1.8421052631578947,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 1.9736842105263157,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 2.1052631578947367,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 2.236842105263158,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 2.3684210526315788,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 2.5,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 2.6315789473684212,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 2.763157894736842,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 2.8947368421052633,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 3.026315789473684,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 3.1578947368421053,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 3.289473684210526,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 3.4210526315789473,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 3.5526315789473686,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 3.6842105263157894,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 3.8157894736842106,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 3.9473684210526314,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 4.078947368421052,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 4.2105263157894735,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 4.342105263157895,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 4.473684210526316,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 4.605263157894737,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 4.7368421052631575,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 4.868421052631579,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 1,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 1,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 2,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 2,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 3,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 3,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 4,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 4,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 5,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 5,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 6,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 6,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 7,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 7,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 8,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 8,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 9,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 9,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 10,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 10,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 11,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 11,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 12,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 12,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 13,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 13,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 14,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 14,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 15,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 15,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": 0,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 5.0,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 5.134615384615385,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 5.269230769230769,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 5.403846153846154,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 5.538461538461538,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 5.673076923076923,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 5.8076923076923075,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 5.9423076923076925,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 6.076923076923077,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 6.211538461538462,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 6.346153846153847,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 6.480769230769231,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 6.615384615384615,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 6.75,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 6.884615384615385,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 7.019230769230769,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 7.153846153846153,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 7.288461538461538,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 7.423076923076923,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 7.5576923076923075,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 7.6923076923076925,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 7.826923076923077,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 7.961538461538462,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 8.096153846153847,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 8.23076923076923,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 8.365384615384615,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 8.5,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 8.634615384615385,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 8.76923076923077,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 8.903846153846153,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 9.038461538461538,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 9.173076923076923,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 9.307692307692307,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 9.442307692307693,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 9.576923076923077,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 9.711538461538462,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 9.846153846153847,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 9.98076923076923,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 10.115384615384615,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 10.25,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 10.384615384615385,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 10.51923076923077,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 10.653846153846153,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 10.788461538461538,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 10.923076923076923,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 11.057692307692307,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 11.192307692307693,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 11.326923076923077,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 11.461538461538462,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 11.596153846153847,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 11.73076923076923,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 11.865384615384615,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 1,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 1,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 2,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 2,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 3,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 3,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 4,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 4,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 5,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 5,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 6,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 6,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 7,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 7,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 8,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 8,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 9,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 9,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 10,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 10,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 11,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 11,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 12,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 12,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 13,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 13,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 14,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 14,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 15,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 15,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": 1,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 12.0,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 12.133333333333333,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 12.266666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 12.4,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 12.533333333333333,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 12.666666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 12.8,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 12.933333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 13.066666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 13.2,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 13.333333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 13.466666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 13.6,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 13.733333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 13.866666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 14.0,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 14.133333333333333,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 14.266666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 14.4,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 14.533333333333333,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 14.666666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 14.8,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 14.933333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 15.066666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 15.2,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 15.333333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 15.466666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 15.6,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 15.733333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 15.866666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 16.0,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 16.133333333333333,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 16.266666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 16.4,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 16.53333333333333,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 16.666666666666668,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 16.8,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 16.933333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 17.066666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 17.2,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 17.333333333333332,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 17.46666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 17.6,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 17.733333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 17.866666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 18.0,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 18.133333333333333,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 18.266666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 18.4,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 18.53333333333333,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 18.666666666666668,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 18.8,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 18.933333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 19.066666666666666,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 19.2,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 19.333333333333332,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 19.46666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 19.6,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 19.733333333333334,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 19.866666666666667,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 0,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 1,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 1,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 2,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 2,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 3,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 3,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 4,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 4,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 5,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 5,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 6,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 6,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 7,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 7,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 8,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 8,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 9,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 9,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 10,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 10,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 11,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 11,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 12,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 12,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 13,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 13,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 14,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 14,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 15,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 15,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": 2,
+      "iteration": 16,
+      "phase": "offline_denoising"
+    },
+    {
+      "source_time": 20.0,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 20.13235294117647,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 20.264705882352942,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 20.397058823529413,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 20.529411764705884,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 20.66176470588235,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 20.794117647058822,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 20.926470588235293,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 21.058823529411764,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 21.191176470588236,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 21.323529411764707,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 21.455882352941178,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 21.58823529411765,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 21.720588235294116,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 21.852941176470587,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 21.985294117647058,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 22.11764705882353,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 22.25,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 22.38235294117647,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 22.514705882352942,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 22.647058823529413,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 22.779411764705884,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 22.91176470588235,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 23.044117647058822,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 23.176470588235293,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 23.308823529411764,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 23.441176470588236,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 23.573529411764707,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 23.705882352941178,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 23.83823529411765,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 23.970588235294116,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 24.102941176470587,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 24.235294117647058,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    },
+    {
+      "source_time": 24.36764705882353,
+      "sample": null,
+      "iteration": null,
+      "phase": "recorded_motion"
+    }
+  ]
+}
