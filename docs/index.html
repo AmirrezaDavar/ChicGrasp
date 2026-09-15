@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ChicGrasp: customized dual-jaw gripper design, diffusion-policy robot control, and published hardware experiments."><title>ChicGrasp | Dual-jaw grasping with diffusion policy</title><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><script defer src="site.js"></script><link rel="canonical" href="https://AmirrezaDavar.github.io/ChicGrasp/"><meta property="og:title" content="ChicGrasp"><meta property="og:description" content="Customized dual-jaw grasping with diffusion policy. Hardware, action generation, and evaluation recordings."><meta property="og:image" content="https://AmirrezaDavar.github.io/ChicGrasp/assets/figures/action_process_poster.jpg"></head><body><a class="skip" href="#main">Skip to content</a><header class="site-nav"><a href="index.html">ChicGrasp</a><nav aria-label="Project navigation"><a href="index.html#evaluations">Evaluations</a><a href="policy.html">Action generation</a><a href="index.html#results">Results</a><a href="index.html#resources">Resources</a></nav></header><main id="main" class="wrap">
 <header class="paper-header"><h1>ChicGrasp</h1><p class="subtitle">Imitation-Learning-Based Customized Dual-Jaw Gripper Control<br class="desktop-break"> for Manipulation of Delicate, Irregular Bio-Products</p>
-<p class="authors"><a href="https://github.com/AmirrezaDavar">Amirreza Davar</a>, Zhengtong Xu, Siavash Mahmoudi, Pouya Sohrabipour, Chaitanya Pallerla,<br class="desktop-break"> Yu She, Wan Shou, Philip Glen Crandall, and Dongyi Wang</p>
-<p class="publication">Advanced Robotics Research · 2026</p><div class="paper-links"><a href="https://doi.org/10.1002/adrr.202500149">Paper</a><a href="https://github.com/AmirrezaDavar/ChicGrasp">Code</a><a href="https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p">Data &amp; checkpoints</a><a href="#evaluations">Evaluations</a><a href="#overview">Video</a></div></header><figure id="pipeline" class="method-teaser"><a href="assets/figures/pipeline_overview.pdf" target="_blank" rel="noopener"><img src="assets/figures/pipeline_overview.svg" width="2400" height="1350" alt="ChicGrasp pipeline: three camera histories and robot and jaw states feed the policy, which predicts robot pose trajectories and independent jaw commands with receding-horizon feedback."></a><figcaption><a href="assets/figures/pipeline_overview.pdf" target="_blank" rel="noopener">View full-size PDF</a></figcaption></figure>
+<p class="authors"><a href="#author-amirreza-davar">Amirreza Davar</a>, <a href="#author-zhengtong-xu">Zhengtong Xu</a>, <a href="#author-siavash-mahmoudi">Siavash Mahmoudi</a>, <a href="#author-pouya-sohrabipour">Pouya Sohrabipour</a>, <a href="#author-chaitanya-pallerla">Chaitanya Pallerla</a>,<br class="desktop-break"> <a href="#author-yu-she">Yu She</a>, <a href="#author-wan-shou">Wan Shou</a>, <a href="#author-philip-glen-crandall">Philip Glen Crandall</a>, and <a href="#author-dongyi-wang">Dongyi Wang</a></p>
+<p class="publication">Advanced Robotics Research · 2026</p><div class="paper-links"><a href="https://doi.org/10.1002/adrr.202500149">Paper</a><a href="https://github.com/AmirrezaDavar/ChicGrasp">Code</a><a href="https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p">Data &amp; checkpoints</a><a href="#evaluations">Evaluations</a><a href="#overview">Video</a><a href="#authors">Authors</a></div></header><figure id="pipeline" class="method-teaser"><a href="assets/figures/pipeline_overview.pdf" target="_blank" rel="noopener"><img src="assets/figures/pipeline_overview.svg" width="2400" height="1350" alt="ChicGrasp pipeline: three camera histories and robot and jaw states feed the policy, which predicts robot pose trajectories and independent jaw commands with receding-horizon feedback."></a><figcaption><a href="assets/figures/pipeline_overview.pdf" target="_blank" rel="noopener">View full-size PDF</a></figcaption></figure>
 <p class="abstract">ChicGrasp combines a customized pneumatic gripper and imitation learning to handle delicate, irregular poultry carcasses with a UR10e robot. A diffusion policy coordinates robot motion with two independently actuated jaw groups; a scripted sequence then transfers the carcass to a shackle. Trained from 100 demonstrations, the system achieved <strong>113 successful trials out of 140 (80.71%)</strong> in the published hardware study.</p>
 <section id="highlights" class="section"><h2>Highlights</h2><div class="highlights"><figure><img class="cad-highlight" src="assets/figures/gripper_cad.png" width="1400" height="1100" alt="Customized dual-jaw gripper CAD assembly"><figcaption><strong>Customized dual-jaw gripper.</strong> Two independent pneumatic jaw groups accommodate differences in leg position. <a href="#hardware">Design and CAD</a>.</figcaption></figure><figure><video class="" controls muted playsinline preload="none" poster="assets/figures/action_process_poster.jpg" data-autoplay loop><source src="assets/media/chicgrasp_action_process_clean.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/media/chicgrasp_action_process_clean.mp4">Download the MP4.</a></video><figcaption><strong>Diffusion-policy action generation.</strong> Candidate action sequences converge during offline checkpoint replay. <a href="policy.html">Robot and jaw predictions</a>.</figcaption></figure><figure><video class="" controls muted playsinline preload="none" poster="assets/data/t20_camera_0.jpg" ><source src="assets/media/episode14_camera0.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/media/episode14_camera0.mp4">Download the MP4.</a></video><figcaption><strong>Independent jaw control.</strong> The wrist view shows the recorded grasp phase. Jaw commands close at different times. <a href="policy.html#recorded">Recorded commands</a>.</figcaption></figure></div><p><a href="action-videos.html">Browse the 23 individual action videos →</a></p></section><section id="overview" class="section"><h2>Project video</h2><div id="overview-slot" class="video-placeholder" role="region" aria-label="Project video placeholder"><span class="placeholder-icon" aria-hidden="true">▷</span><strong>Project overview</strong><span>The 80-second video is being finalized.</span></div><p class="small">The final overview will appear here. <a href="https://www.youtube.com/watch?v=IURYkUaIiIM">Watch the original project video</a>.</p></section>
 <section id="evaluations" class="section"><h2>Diffusion-policy evaluations</h2><p>All <strong>142 available diffusion-policy recordings</strong> from the wrist camera, arranged by episode number. Every window starts together and plays at 4× speed; shorter recordings hold their final frame.</p><figure><video class="film" controls muted playsinline preload="none" poster="assets/evaluations/dp_all_142_grid_web.jpg" data-autoplay loop><source src="assets/evaluations/dp_all_142_grid_web.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/evaluations/dp_all_142_grid_web.mp4">Download the MP4.</a></video><figcaption>The available recordings show the grasp phase and stop before lift and scripted rehang. Archive episodes are not mapped to the paper’s 140 labeled trials.</figcaption></figure><div class="caption-row"><a href="evaluations.html">Open all 142 episodes →</a><a href="assets/evaluations/dp_all_142_grid_4k.mp4" download>Download 4K grid</a><a href="assets/evaluations/manifest.json">Episode manifest</a></div></section>
@@ -37,7 +37,73 @@ Your browser does not support embedded video. <a href="assets/evaluations/lstm-g
 <details><summary>Training curves</summary><figure><img src="assets/figures/training_curves.svg" loading="lazy" alt="Training loss by epoch for diffusion policy, IBC, and LSTM-GMM."><figcaption>Last logged loss per epoch, without smoothing. Loss magnitudes are not comparable across the different objectives. <a href="assets/figures/training_curves.pdf">PDF</a> · <a href="evidence.html#training">Training details</a>.</figcaption></figure></details></section>
 <section id="hardware" class="section"><h2>Gripper design and control</h2><div class="hardware-grid"><figure><img src="assets/figures/gripper_cad.png" loading="lazy" width="1400" height="1100" alt="ChicGrasp CAD assembly with the independent jaw groups in teal and amber."><figcaption>Rendered from the project CAD. Colors distinguish the jaw groups; the camera holder is omitted.</figcaption></figure><div><p>A UR10e positions the gripper while the two jaw groups open and close independently. The policy conditions on three RGB camera views, end-effector pose, and jaw states.</p><p>The stored action contains:</p><pre>[x, y, z, rx, ry, rz, left_jaw, right_jaw]</pre><p>Jaw values decode to binary commands: <strong>0 = closed, 1 = open</strong>. The paper describes five task commands; the archived implementation also retains the three orientation values.</p><p><a href="policy.html">Explore the generated actions →</a></p></div></div>
 <p class="resource-links"><a href="https://cad.onshape.com/documents/59651785fc8216c351878e9e/w/96ccd4d006239148f4499ab2/e/caa066b5de7d7eefbd6d0296">Gripper assembly</a> · <a href="https://cad.onshape.com/documents/f9923c0a774e494641001547/w/5449e3aa08570ad5e1bd725d/e/4c4594f9492c86e876574dad">Jaw finger</a> · <a href="https://cad.onshape.com/documents/2ba3c05d30474bc51e5caf05/w/b2a50accccf850db7a426ca7/e/8b4a64de694fb9754597638f">Flange</a> · <a href="https://cad.onshape.com/documents/1ce782597a880b6af038303f/w/750def440809f62fce0fa768/e/c56676c9f0502747cf60a721">Camera holder</a></p></section>
-<section id="contribution" class="section"><h2>My contribution</h2><p>I designed and fabricated the gripper, developed the data collection and robot-control software, and trained the diffusion policy and baselines. I designed and conducted the experiments, analyzed the data, and created the research figures. I also wrote the manuscript and built the project’s GitHub repository and documentation.</p><p class="small">Amirreza Davar · First author. The publication credits the full research team listed above.</p></section>
+<section id="contribution" class="section"><h2>My contribution</h2><p>I designed and fabricated the gripper, developed the data collection and robot-control software, and trained the diffusion policy and baselines. I designed and conducted the experiments, analyzed the data, and created the research figures. I also wrote the manuscript and built the project’s GitHub repository and documentation.</p><p class="small">Amirreza Davar · First author. <a href="https://github.com/AmirrezaDavar">GitHub</a> · <a href="https://www.linkedin.com/in/amirreza1davar/">LinkedIn</a> · <a href="mailto:adavar@uark.edu">Email</a></p></section>
+<section id="authors" class="section" aria-labelledby="authors-heading">
+<h2 id="authors-heading">Authors</h2>
+<ul class="author-grid" aria-label="Paper authors in publication order">
+  <li id="author-amirreza-davar" class="author-person">
+    <a class="author-profile" href="https://github.com/AmirrezaDavar">
+      <img class="author-portrait" src="assets/authors/amirreza-davar.jpg" width="240" height="360" loading="lazy" alt="Portrait of Amirreza Davar">
+      <span class="author-name">Amirreza Davar<sup>1,2</sup></span>
+    </a><span class="author-role">First author</span>
+  </li>
+  <li id="author-zhengtong-xu" class="author-person">
+    <a class="author-profile" href="https://zhengtongxu.github.io/website/">
+      <img class="author-portrait" src="assets/authors/zhengtong-xu.jpg" width="1280" height="1265" loading="lazy" alt="Portrait of Zhengtong Xu">
+      <span class="author-name">Zhengtong Xu<sup>3</sup></span>
+    </a>
+  </li>
+  <li id="author-siavash-mahmoudi" class="author-person">
+    <a class="author-profile" href="https://dw-bioag.github.io/safelab/people.html">
+      <img class="author-portrait" src="assets/authors/siavash-mahmoudi.jpg" width="800" height="800" loading="lazy" alt="Portrait of Siavash Mahmoudi">
+      <span class="author-name">Siavash Mahmoudi<sup>1</sup></span>
+    </a>
+  </li>
+  <li id="author-pouya-sohrabipour" class="author-person">
+    <a class="author-profile" href="https://dw-bioag.github.io/safelab/people.html">
+      <img class="author-portrait" src="assets/authors/pouya-sohrabipour.jpg" width="640" height="640" loading="lazy" alt="Portrait of Pouya Sohrabipour">
+      <span class="author-name">Pouya Sohrabipour<sup>1</sup></span>
+    </a>
+  </li>
+  <li id="author-chaitanya-pallerla" class="author-person">
+    <a class="author-profile" href="https://dw-bioag.github.io/safelab/people.html">
+      <img class="author-portrait" src="assets/authors/chaitanya-pallerla.jpg" width="800" height="800" loading="lazy" alt="Portrait of Chaitanya Pallerla">
+      <span class="author-name">Chaitanya Pallerla<sup>1,4</sup></span>
+    </a>
+  </li>
+  <li id="author-yu-she" class="author-person">
+    <a class="author-profile" href="https://engineering.purdue.edu/IE/people/ptProfile?resource_id=256650">
+      <img class="author-portrait" src="assets/authors/yu-she.jpg" width="1426" height="1425" loading="lazy" alt="Portrait of Yu She">
+      <span class="author-name">Yu She<sup>3</sup></span>
+    </a>
+  </li>
+  <li id="author-wan-shou" class="author-person">
+    <a class="author-profile" href="https://engineering.uark.edu/mechanical-engineering/faculty/uid/wshou/name/Wan+Shou/">
+      <img class="author-portrait" src="assets/authors/wan-shou.jpg" width="650" height="975" loading="lazy" alt="Portrait of Wan Shou">
+      <span class="author-name">Wan Shou<sup>2</sup></span>
+    </a>
+  </li>
+  <li id="author-philip-glen-crandall" class="author-person">
+    <a class="author-profile" href="https://food-science.uark.edu/people/faculty/uid/crandal/name/Philip+Crandall/">
+      <img class="author-portrait" src="assets/authors/philip-glen-crandall.jpg" width="650" height="975" loading="lazy" alt="Portrait of Philip Glen Crandall">
+      <span class="author-name">Philip Glen Crandall<sup>4</sup></span>
+    </a>
+  </li>
+  <li id="author-dongyi-wang" class="author-person">
+    <a class="author-profile" href="https://dw-bioag.github.io/safelab/people.html">
+      <img class="author-portrait" src="assets/authors/dongyi-wang.jpg" width="650" height="975" loading="lazy" alt="Portrait of Dongyi Wang">
+      <span class="author-name">Dongyi Wang<sup>1,4</sup></span>
+    </a><span class="author-role">Corresponding author</span>
+  </li>
+</ul>
+<div class="author-affiliations" aria-label="Affiliations as listed in the paper">
+  <p><sup>1</sup> Department of Biological and Agricultural Engineering, University of Arkansas</p>
+  <p><sup>2</sup> Department of Mechanical Engineering, University of Arkansas</p>
+  <p><sup>3</sup> School of Industrial Engineering, Purdue University</p>
+  <p><sup>4</sup> Department of Food Science, University of Arkansas</p>
+</div>
+<p class="small author-source-note">Affiliations as listed in the <a href="https://doi.org/10.1002/adrr.202500149">published paper</a>. <a href="https://github.com/AmirrezaDavar/ChicGrasp/blob/main/docs/assets/authors/README.md">Photo sources</a>.</p>
+</section>
 <section id="ongoing" class="section"><h2>Ongoing work: Isaac Lab</h2><div class="ongoing-grid"><video class="" controls muted playsinline preload="none" poster="assets/figures/simulation_preview.jpg" ><source src="assets/media/simulation_workbench.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/media/simulation_workbench.mp4">Download the MP4.</a></video><div><p>A separate simulation workbench explores articulated anatomy, grasp retention, and shackle contact.</p><p class="small">This excerpt shows a held practice configuration. A repeatable released two-hock hang has not been verified. This work is separate from the published hardware study.</p></div></div></section><section id="resources" class="section"><h2>Code, data, and paper</h2><p><a href="https://github.com/AmirrezaDavar/ChicGrasp">Source code</a> · <a href="https://uark.box.com/s/c9bnzfpy6shej765x8g0z3fzt3q8ay7p">Data and checkpoints</a> · <a href="https://doi.org/10.1002/adrr.202500149">Published paper</a> · <a href="evidence.html">Sources and reproduction</a></p><p><a href="https://github.com/AmirrezaDavar/ChicGrasp/blob/main/docs/PORTFOLIO.md">Portfolio editing guide</a></p>
 <details><summary>Citation</summary><pre>@article{davar2026chicgrasp,
   title = {ChicGrasp: Imitation-Learning-Based Customized Dual-Jaw Gripper Control for Manipulation of Delicate, Irregular Bio-Products},

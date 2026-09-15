@@ -67,3 +67,9 @@ python presentation/build_baseline_grids.py \
 ```
 
 Copy the generated `ibc/` and `lstm-gmm/` folders into `docs/assets/evaluations/`. Each includes a full-resolution grid, a web grid, posters, individual episodes, and a manifest with source hashes and timings. The two grids use common starts, 4× speed, and held endings. Add more recordings only after updating the layout and archive-coverage text together.
+
+## Authors and professional links
+
+The `#authors` section in `index.html` includes all nine paper authors in publication order. The linked names in the page header jump to their entries. Portraits are stored in `assets/authors/`; `README.md` and `sources.json` in that folder record the original sources. Keep affiliation superscripts consistent with the published paper. Layout and circular portrait crops use `.author-*` rules in `style.css`.
+
+Amirreza’s GitHub, LinkedIn, and professional email links appear directly below “My contribution.” Add a CV link there once a public CV is available. Update a portrait by adding a new file and changing its `src`; retain the prior original in the external archive.

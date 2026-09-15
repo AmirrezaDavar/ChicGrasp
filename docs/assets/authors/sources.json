@@ -1,0 +1,168 @@
+{
+  "retrieved": "2026-09-15",
+  "paper": "https://doi.org/10.1002/adrr.202500149",
+  "affiliations": {
+    "1": "Department of Biological and Agricultural Engineering, University of Arkansas",
+    "2": "Department of Mechanical Engineering, University of Arkansas",
+    "3": "School of Industrial Engineering, Purdue University",
+    "4": "Department of Food Science, University of Arkansas"
+  },
+  "authors": [
+    {
+      "name": "Amirreza Davar",
+      "id": "amirreza-davar",
+      "affiliations": [
+        1,
+        2
+      ],
+      "source_page": "https://dw-bioag.github.io/safelab/people.html",
+      "image_url": "https://dw-bioag.github.io/safelab/images/people/AmirD.jpeg",
+      "profile_url": "https://github.com/AmirrezaDavar",
+      "role": "First author",
+      "file": "amirreza-davar.jpg",
+      "sha256": "89464c5ee1d37d35737fdecd7fbdcdf273e6d2fb19a21c129dcef611dfe8639f",
+      "bytes": 12242,
+      "codec_name": "mjpeg",
+      "width": 240,
+      "height": 360
+    },
+    {
+      "name": "Zhengtong Xu",
+      "id": "zhengtong-xu",
+      "affiliations": [
+        3
+      ],
+      "source_page": "https://zhengtongxu.github.io/website/",
+      "image_url": "https://zhengtongxu.github.io/website/images/photo.jpg",
+      "profile_url": "https://zhengtongxu.github.io/website/",
+      "role": "",
+      "file": "zhengtong-xu.jpg",
+      "sha256": "d8a1c783fd8c22d74eacb3ad1d1022f1e051e60a718e027d46f05639a40a0a49",
+      "bytes": 179494,
+      "codec_name": "mjpeg",
+      "width": 1280,
+      "height": 1265
+    },
+    {
+      "name": "Siavash Mahmoudi",
+      "id": "siavash-mahmoudi",
+      "affiliations": [
+        1
+      ],
+      "source_page": "https://dw-bioag.github.io/safelab/people.html",
+      "image_url": "https://dw-bioag.github.io/safelab/images/people/SiavashM.jpeg",
+      "profile_url": "https://dw-bioag.github.io/safelab/people.html",
+      "role": "",
+      "file": "siavash-mahmoudi.jpg",
+      "sha256": "eb9eff37738368cd1ea068b99cb3565ae2f7dcc5f09e558784443fc23ed216ba",
+      "bytes": 68132,
+      "codec_name": "mjpeg",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "name": "Pouya Sohrabipour",
+      "id": "pouya-sohrabipour",
+      "affiliations": [
+        1
+      ],
+      "source_page": "https://dw-bioag.github.io/safelab/people.html",
+      "image_url": "https://dw-bioag.github.io/safelab/images/people/PouyaS.jpeg",
+      "profile_url": "https://dw-bioag.github.io/safelab/people.html",
+      "role": "",
+      "file": "pouya-sohrabipour.jpg",
+      "sha256": "3c303130c710f25989304ba78aac74540e3beedd7168fe32324a83d9dfcd0c60",
+      "bytes": 55729,
+      "codec_name": "mjpeg",
+      "width": 640,
+      "height": 640
+    },
+    {
+      "name": "Chaitanya Pallerla",
+      "id": "chaitanya-pallerla",
+      "affiliations": [
+        1,
+        4
+      ],
+      "source_page": "https://dw-bioag.github.io/safelab/people.html",
+      "image_url": "https://dw-bioag.github.io/safelab/images/people/Chaitanya.jpeg",
+      "profile_url": "https://dw-bioag.github.io/safelab/people.html",
+      "role": "",
+      "file": "chaitanya-pallerla.jpg",
+      "sha256": "1e09c481b319b415a3930b9af96b74f1b98cf3ac8e00793745b3221ceaf36a46",
+      "bytes": 132109,
+      "codec_name": "mjpeg",
+      "width": 800,
+      "height": 800
+    },
+    {
+      "name": "Yu She",
+      "id": "yu-she",
+      "affiliations": [
+        3
+      ],
+      "source_page": "https://engineering.purdue.edu/IE/people/ptProfile?resource_id=256650",
+      "image_url": "https://engineering.purdue.edu/ResourceDB/ResourceFiles/image256656",
+      "profile_url": "https://engineering.purdue.edu/IE/people/ptProfile?resource_id=256650",
+      "role": "",
+      "file": "yu-she.jpg",
+      "sha256": "4b563635d07604212a1466e3d6fec971954e4eec3541de2b3009e5f85d5f9668",
+      "bytes": 1322049,
+      "codec_name": "mjpeg",
+      "width": 1426,
+      "height": 1425
+    },
+    {
+      "name": "Wan Shou",
+      "id": "wan-shou",
+      "affiliations": [
+        2
+      ],
+      "source_page": "https://engineering.uark.edu/mechanical-engineering/faculty.php",
+      "image_url": "https://campusdata.uark.edu/resources/images/FacultyStaffProfile/wshou.jpg",
+      "profile_url": "https://engineering.uark.edu/mechanical-engineering/faculty/uid/wshou/name/Wan+Shou/",
+      "role": "",
+      "file": "wan-shou.jpg",
+      "sha256": "c6f6913f13a2886fbeca3532e973cbb38a12353dd9f7dca19ef085544f4f1c75",
+      "bytes": 94417,
+      "codec_name": "mjpeg",
+      "width": 650,
+      "height": 975
+    },
+    {
+      "name": "Philip Glen Crandall",
+      "id": "philip-glen-crandall",
+      "affiliations": [
+        4
+      ],
+      "source_page": "https://food-science.uark.edu/people/faculty.php",
+      "image_url": "https://campusdata.uark.edu/resources/images/FacultyStaffProfile/crandal.jpg",
+      "profile_url": "https://food-science.uark.edu/people/faculty/uid/crandal/name/Philip+Crandall/",
+      "role": "",
+      "file": "philip-glen-crandall.jpg",
+      "sha256": "fffc35cf96fbf38aa11c409b9cd84ae7db1f343e6b844af595e796c54594e252",
+      "bytes": 131167,
+      "codec_name": "mjpeg",
+      "width": 650,
+      "height": 975
+    },
+    {
+      "name": "Dongyi Wang",
+      "id": "dongyi-wang",
+      "affiliations": [
+        1,
+        4
+      ],
+      "source_page": "https://dw-bioag.github.io/safelab/people.html",
+      "image_url": "https://dw-bioag.github.io/safelab/images/people/Wang.jpeg",
+      "profile_url": "https://dw-bioag.github.io/safelab/people.html",
+      "role": "Corresponding author",
+      "file": "dongyi-wang.jpg",
+      "sha256": "e34d9982486b89c494b0ffa376bda3d9bc56ff80c8f3f004e2be55477948ef57",
+      "bytes": 96952,
+      "codec_name": "mjpeg",
+      "width": 650,
+      "height": 975
+    }
+  ]
+}

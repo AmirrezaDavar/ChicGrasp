@@ -29,7 +29,7 @@ h3 { font-size:18px; font-weight:500; }
 .highlights video { width:100%; aspect-ratio:16/9; object-fit:contain; background:#fafafa; }
 .highlights figcaption { font-size:13px; margin-top:12px; }
 .highlights strong { color:#454b53; font-weight:500; }
-.video-placeholder { min-height:220px; aspect-ratio:3.6; background:#fafbfc; border:1px dashed #cbd1d7; color:#727a84; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; gap:7px; margin:20px 0 12px; padding:24px; }
+.video-placeholder { width:100%; max-width:100%; min-height:220px; aspect-ratio:3.6; background:#fafbfc; border:1px dashed #cbd1d7; color:#727a84; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; gap:7px; margin:20px 0 12px; padding:24px; }
 .video-placeholder strong { color:#68717a; font-weight:400; font-size:21px; }
 .video-placeholder span { font-size:14px; }
 .video-placeholder .placeholder-icon { font-size:34px; line-height:1; color:#a9b4c0; }
@@ -98,3 +98,28 @@ button:disabled { opacity:.45; cursor:default; }
 .evaluation-strip { width:100%; aspect-ratio:16/3; background:#f4f5f6; }
 .episode-grid.baseline-episodes { grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
 .baseline-episodes .episode-tile span { font-size:12px; padding:4px 0; }
+
+/* Paper authors: one compact row on desktop, three columns on smaller screens. */
+.author-grid { list-style:none; padding:0; margin:27px 0 24px; display:grid; grid-template-columns:repeat(9,minmax(0,1fr)); gap:14px; }
+.author-person { min-width:0; text-align:center; scroll-margin-top:32px; }
+.author-profile { display:block; text-decoration:none; }
+.author-profile:hover .author-name { text-decoration:underline; }
+.author-portrait { width:88px; height:auto; max-width:100%; aspect-ratio:1; object-fit:cover; object-position:center 35%; border-radius:50%; margin:0 auto 13px; }
+.author-name { display:block; font-size:14px; line-height:1.55; }
+.author-name sup { font-size:10px; margin-left:2px; white-space:nowrap; }
+.author-role { display:block; margin-top:7px; color:var(--muted); font-size:11px; line-height:1.5; }
+.author-affiliations { display:grid; grid-template-columns:1fr 1fr; gap:6px 26px; font-size:12px; color:var(--muted); }
+.author-affiliations p { margin:0; }
+.author-affiliations sup { margin-right:3px; }
+.author-source-note { margin:14px 0 0; font-size:12px; }
+@media(max-width:900px) {
+  .author-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px 16px; }
+  .author-portrait { width:96px; height:auto; }
+}
+@media(max-width:600px) {
+  .author-affiliations { grid-template-columns:1fr; gap:8px; }
+  .author-grid { gap:25px 12px; }
+  .author-name { font-size:13px; }
+}
+
+#author-philip-glen-crandall .author-portrait { object-position:center 15%; }
