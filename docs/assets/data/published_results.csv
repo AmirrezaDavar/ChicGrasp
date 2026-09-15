@@ -1,0 +1,43 @@
+method,chicken,split,successes,trials,nominal_successes,nominal_trials,disturbed_successes,disturbed_trials
+Diffusion Policy,Chi_1,seen,9,10,9,10,0,0
+Diffusion Policy,Chi_2,seen,8,10,8,10,0,0
+Diffusion Policy,Chi_3,seen,7,10,7,10,0,0
+Diffusion Policy,Chi_4,seen,9,10,9,10,0,0
+Diffusion Policy,Chi_5,seen,9,10,9,10,0,0
+Diffusion Policy,Chi_6,seen,9,10,9,10,0,0
+Diffusion Policy,Chi_7,seen,8,10,8,10,0,0
+Diffusion Policy,Chi_8,seen,8,10,8,10,0,0
+Diffusion Policy,Chi_9,seen,10,10,10,10,0,0
+Diffusion Policy,Chi_10,seen,7,10,7,10,0,0
+Diffusion Policy,Chi_11,unseen,7,10,3,3,4,7
+Diffusion Policy,Chi_12,unseen,6,10,3,3,3,7
+Diffusion Policy,Chi_13,unseen,8,10,2,3,6,7
+Diffusion Policy,Chi_14,unseen,8,10,3,3,5,7
+IBC,Chi_1,seen,0,10,0,10,0,0
+IBC,Chi_2,seen,0,10,0,10,0,0
+IBC,Chi_3,seen,0,10,0,10,0,0
+IBC,Chi_4,seen,0,10,0,10,0,0
+IBC,Chi_5,seen,0,10,0,10,0,0
+IBC,Chi_6,seen,0,10,0,10,0,0
+IBC,Chi_7,seen,0,10,0,10,0,0
+IBC,Chi_8,seen,0,10,0,10,0,0
+IBC,Chi_9,seen,0,10,0,10,0,0
+IBC,Chi_10,seen,0,10,0,10,0,0
+IBC,Chi_11,unseen,0,10,0,3,0,7
+IBC,Chi_12,unseen,0,10,0,3,0,7
+IBC,Chi_13,unseen,0,10,0,3,0,7
+IBC,Chi_14,unseen,0,10,0,3,0,7
+LSTM-GMM,Chi_1,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_2,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_3,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_4,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_5,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_6,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_7,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_8,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_9,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_10,seen,0,10,0,10,0,0
+LSTM-GMM,Chi_11,unseen,0,10,0,3,0,7
+LSTM-GMM,Chi_12,unseen,0,10,0,3,0,7
+LSTM-GMM,Chi_13,unseen,0,10,0,3,0,7
+LSTM-GMM,Chi_14,unseen,0,10,0,3,0,7

@@ -1,0 +1,46 @@
+{
+  "source": "gripper_customized_1.usd",
+  "source_sha256": "8f8c7ba10971b5bf289913e08a37b682812b587657a118a727dc10f1d545bbae",
+  "mesh_prims": [
+    "/World/custom_gripper/Base_Gripper/Base_Gripper/tn__gripper_basestep_oO/NONE/Mesh",
+    "/World/custom_gripper/Base_Gripper/Base_Gripper/tn__jawWOsmallPartstep_pR/NONE/Mesh",
+    "/World/custom_gripper/Base_Gripper/Base_Gripper/tn__jawWOsmallPartstep_1_oU/NONE/Mesh",
+    "/World/custom_gripper/left_finger_1/left_finger_1/tn__finger_springstep_ZQ/NONE/Mesh",
+    "/World/custom_gripper/left_finger_1/left_finger_1/tn__smallpart_k9/NONE/Mesh",
+    "/World/custom_gripper/left_finger_2/left_finger_2/tn__finger_springstep_ZQ/NONE/Mesh",
+    "/World/custom_gripper/left_finger_2/left_finger_2/tn__smallpart_k9/NONE/Mesh",
+    "/World/custom_gripper/right_finger_1/right_finger_1/tn__finger_springstep_ZQ/NONE/Mesh",
+    "/World/custom_gripper/right_finger_1/right_finger_1/tn__smallpart_k9/NONE/Mesh",
+    "/World/custom_gripper/right_finger_2/right_finger_2/tn__finger_springstep_ZQ/NONE/Mesh",
+    "/World/custom_gripper/right_finger_2/right_finger_2/tn__smallpart_k9/NONE/Mesh"
+  ],
+  "triangles": 15180,
+  "stage_meters_per_unit": 1.0,
+  "description": "Local gripper CAD assembly, composed transforms preserved. Color accents added only in the renderer; no inferred jaw motion.",
+  "dependencies": [
+    {
+      "file": "gripper_customized_1.usd",
+      "sha256": "8f8c7ba10971b5bf289913e08a37b682812b587657a118a727dc10f1d545bbae"
+    },
+    {
+      "file": "Base_Gripper.usd",
+      "sha256": "523b70472f287a968241eb8aea57761cb514e46fe7b66803e3c85818186a19de"
+    },
+    {
+      "file": "left_finger_1.usd",
+      "sha256": "080a084cb2eabcc376fcb54fef6206813a66e62034e6f2d931d3dda0acff7962"
+    },
+    {
+      "file": "right_finger_1.usd",
+      "sha256": "2d722a3ec9d3e39eb4d7b9068e03e829feb912d905a75287aed073ec3ac5038e"
+    },
+    {
+      "file": "left_finger_2.usd",
+      "sha256": "23f155f4ec9b9c89411ddca9f071552f233248df14b29dd18eab392143407199"
+    },
+    {
+      "file": "right_finger_2.usd",
+      "sha256": "ac493d0ec84738b72bf093582ad3b887cbd0a15ed6821394e95c233168619169"
+    }
+  ]
+}

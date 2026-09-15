@@ -1,0 +1,45 @@
+WEBVTT
+
+00:00.000 --> 00:08.000
+ChicGrasp: a custom dual-jaw gripper and a diffusion policy.
+Published study: 113 successful trials out of 140.
+
+00:08.000 --> 00:16.000
+Local CAD assembly. Two jaw groups operate independently.
+Only the presentation camera moves around the model.
+
+00:16.000 --> 00:24.000
+The study reports 100 demonstrations.
+Three camera views and robot and jaw state condition the policy.
+
+00:24.000 --> 00:30.000
+Actual offline checkpoint replay at a recorded observation from 5 seconds.
+Gaussian noise is refined into robot and jaw targets.
+
+00:30.000 --> 00:36.000
+The next replay uses an observation from 12 seconds.
+Each point represents a future Cartesian target.
+
+00:36.000 --> 00:42.000
+At 20 seconds, the predicted jaw sequence includes a right-jaw closure.
+These are newly sampled offline actions, not executed commands.
+
+00:42.000 --> 00:52.000
+Recorded commands, shown at half speed.
+Right jaw closes at 20.6 seconds; left jaw closes at 21.1 seconds.
+
+00:52.000 --> 00:59.000
+Published diffusion-policy results: 84 of 100 seen trials,
+29 of 40 unseen trials, and 113 of 140 overall.
+
+00:59.000 --> 01:05.000
+Both baselines report zero successful cycles in this study.
+Rehanging is scripted; the reported total cycle is about 38 seconds.
+
+01:05.000 --> 01:15.000
+Separate ongoing Isaac Lab work: articulated anatomy and shackle contact.
+This cinematic shows a held pose; a released two-hock hang is unverified.
+
+01:15.000 --> 01:24.000
+Amirreza Davar. Mechanical design, data collection, policy training,
+real-robot integration, and experimental evaluation.

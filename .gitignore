@@ -22,3 +22,8 @@ artifacts/
 *.png
 *.jpg
 *.jpeg
+
+# Curated presentation exports are intentional repository assets.
+!docs/assets/
+!docs/assets/**/
+!docs/assets/**

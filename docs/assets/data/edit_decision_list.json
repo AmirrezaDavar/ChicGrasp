@@ -1,0 +1,59 @@
+{
+  "duration_seconds": 84,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "audio": "none; designed for silent playback",
+  "shots": [
+    [
+      0,
+      8,
+      "Introduction",
+      "dp_eval/14 cameras 0 and 1 at elapsed 16\u201324 s, 1\u00d7"
+    ],
+    [
+      8,
+      16,
+      "CAD",
+      "gripper_customized_1.usd composed mesh, camera orbit only"
+    ],
+    [
+      16,
+      24,
+      "Observations",
+      "dp_eval/14 all cameras at elapsed 2\u201310 s, 1\u00d7; paper demonstration count"
+    ],
+    [
+      24,
+      42,
+      "Action generation",
+      "Actual EMA checkpoint replay; samples at 5, 12, 20 s; 100 DDIM steps each"
+    ],
+    [
+      42,
+      52,
+      "Jaw commands",
+      "dp_eval/14 elapsed 18\u201323 s at 0.5\u00d7, approximate video/log alignment"
+    ],
+    [
+      52,
+      65,
+      "Results",
+      "Paper Table 4 transcription and calculated totals"
+    ],
+    [
+      65,
+      75,
+      "Ongoing simulation",
+      "Existing validated cinematic elapsed 10\u201327 s at 1.7\u00d7"
+    ],
+    [
+      75,
+      84,
+      "Credits",
+      "User-confirmed personal technical ownership; paper retains all coauthors"
+    ]
+  ]
+}
