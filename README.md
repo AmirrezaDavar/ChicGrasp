@@ -79,7 +79,7 @@ In evaluation episode 14, the recorded right-jaw command closes at 20.6 s and th
 
 ## My contribution
 
-I designed and fabricated the gripper, collected and integrated the demonstrations, trained the policies and baselines, and implemented the robot deployment and experimental evaluation. — Amirreza Davar
+I designed and fabricated the gripper, developed the data collection and robot-control software, and trained the diffusion policy and baselines. I designed and conducted the experiments, analyzed the data, and created the research figures. I also wrote the manuscript and built the project’s GitHub repository and documentation. — Amirreza Davar
 
 The paper credits the full research team. ChicGrasp builds on the [Diffusion Policy implementation](https://github.com/real-stanford/diffusion_policy) by Chi et al.
 
