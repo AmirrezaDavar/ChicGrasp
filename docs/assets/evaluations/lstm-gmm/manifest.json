@@ -1,0 +1,50 @@
+{
+  "method": "lstm-gmm",
+  "method_label": "LSTM-GMM",
+  "count": 3,
+  "camera": 0,
+  "columns": 3,
+  "rows": 1,
+  "fps": 24,
+  "playback_speed": 4,
+  "duration_seconds": 15.958333333333334,
+  "scope": "All 3 available LSTM-GMM wrist-camera recordings. These are grasp-phase recordings, not the full published 140-trial evaluation. No per-episode published outcome mapping is available.",
+  "timing": "Common starts, uniform 4x speed, and final frames held to a common ending.",
+  "grid_full": "lstm-gmm_all_3_grid_full.mp4",
+  "grid_web": "lstm-gmm_all_3_grid_web.mp4",
+  "episodes": [
+    {
+      "episode": 0,
+      "source": "videos/lstm-gmm_eval/0/0.mp4",
+      "source_seconds": 32.3,
+      "source_sha256": "ed73b1b40ddd1a7d1f1421d4bcc9437237f49eb9aeec2972e4f333eaa527e070",
+      "clip": "episodes/ep000.mp4",
+      "poster": "episodes/ep000.jpg",
+      "row": 0,
+      "column": 0,
+      "outcome": null
+    },
+    {
+      "episode": 1,
+      "source": "videos/lstm-gmm_eval/1/0.mp4",
+      "source_seconds": 59.7,
+      "source_sha256": "a4c24ec5301182f5712d8e43752cf86c67d0f32834c4b82c9115368b25676614",
+      "clip": "episodes/ep001.mp4",
+      "poster": "episodes/ep001.jpg",
+      "row": 0,
+      "column": 1,
+      "outcome": null
+    },
+    {
+      "episode": 2,
+      "source": "videos/lstm-gmm_eval/2/0.mp4",
+      "source_seconds": 36.5,
+      "source_sha256": "4f3c3d11ccd353706348236dd380fba0f8890d2ed70656f055fcd63c116659c4",
+      "clip": "episodes/ep002.mp4",
+      "poster": "episodes/ep002.jpg",
+      "row": 0,
+      "column": 2,
+      "outcome": null
+    }
+  ]
+}

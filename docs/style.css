@@ -93,3 +93,8 @@ button:disabled { opacity:.45; cursor:default; }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
 
 .cad-highlight { width:100%; aspect-ratio:16/9; object-fit:contain; background:#fff; }
+
+/* Three available recordings per baseline, shown together without padding. */
+.evaluation-strip { width:100%; aspect-ratio:16/3; background:#f4f5f6; }
+.episode-grid.baseline-episodes { grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+.baseline-episodes .episode-tile span { font-size:12px; padding:4px 0; }

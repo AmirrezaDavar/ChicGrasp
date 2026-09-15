@@ -8,6 +8,7 @@ GitHub Pages publishes the `docs/` directory on `main`. Changes to these static 
 
 - `index.html`: project introduction, highlights, overview placeholder, evaluation grid, published results, hardware, contribution, and ongoing work.
 - `evaluations.html`, `evaluations.js`: all 142 available DP recordings, with a searchable poster grid and an individual player.
+- `evaluations-ibc.html`, `evaluations-lstm-gmm.html`: separate three-episode baseline grids and browsers, using the same `evaluations.js`.
 - `policy.html`, `app.js`: recorded numerical action-generation explorer and robot/jaw commands.
 - `action-videos.html`: the 23 individual action-overlay examples.
 - `evidence.html`: source coverage, model replay, projection assumptions, and distinctions between archive recordings and published outcomes.
@@ -54,3 +55,15 @@ python -m http.server 8000 --directory docs
 ```
 
 Check desktop and mobile layout, video playback, episode search, dialog navigation, and the action explorer. Preserve the published hardware / ongoing simulation distinction when adding material. Use the Matplotlib scripts in `presentation/` to update research plots, and include corresponding source CSVs.
+
+## Baseline evaluation grids
+
+The IBC and LSTM-GMM sections each show all three available wrist-camera recordings. Generate these in a new output folder:
+
+```bash
+python presentation/build_baseline_grids.py \
+  --data-root /path/to/ChicGrasp-data \
+  --output /path/to/generated/baseline_evaluation_grids
+```
+
+Copy the generated `ibc/` and `lstm-gmm/` folders into `docs/assets/evaluations/`. Each includes a full-resolution grid, a web grid, posters, individual episodes, and a manifest with source hashes and timings. The two grids use common starts, 4× speed, and held endings. Add more recordings only after updating the layout and archive-coverage text together.

@@ -3,6 +3,8 @@
   const data = window.CHICGRASP_EPISODES;
   const grid = document.getElementById('episode-grid');
   const count = document.getElementById('episode-count');
+  const method = grid.dataset.method || 'Diffusion Policy';
+  const assetBase = grid.dataset.assetBase || 'assets/evaluations/';
   if (!data) { count.textContent = 'The episode index could not load.'; return; }
   const dialog = document.getElementById('episode-dialog');
   const player = document.getElementById('episode-player');
@@ -13,10 +15,10 @@
     current = index;
     const episode = data.episodes[index];
     const label = String(episode.episode).padStart(3, '0');
-    document.getElementById('episode-title').textContent = `Diffusion Policy · EP ${label}`;
+    document.getElementById('episode-title').textContent = `${method} · EP ${label}`;
     document.getElementById('episode-info').textContent = `Wrist camera (0) · ${episode.source_seconds.toFixed(1)} s recorded · 4× playback · Grasp phase`;
-    player.src = 'assets/evaluations/' + episode.clip;
-    player.poster = 'assets/evaluations/' + episode.poster;
+    player.src = assetBase + episode.clip;
+    player.poster = assetBase + episode.poster;
     document.getElementById('episode-download').href = player.src;
     previous.disabled = index === 0;
     next.disabled = index === data.episodes.length - 1;
@@ -27,9 +29,9 @@
     const label = String(episode.episode).padStart(3, '0');
     const button = document.createElement('button');
     button.className = 'episode-tile'; button.type = 'button'; button.dataset.episode = label;
-    button.setAttribute('aria-label', `Play diffusion-policy episode ${label}`);
+    button.setAttribute('aria-label', `Play ${method} episode ${label}`);
     const image = document.createElement('img');
-    image.src = 'assets/evaluations/' + episode.poster; image.alt = ''; image.loading = 'lazy';
+    image.src = assetBase + episode.poster; image.alt = ''; image.loading = 'lazy';
     image.width = 640; image.height = 360;
     const caption = document.createElement('span'); caption.textContent = label;
     button.append(image, caption); button.addEventListener('click', () => openEpisode(index));
