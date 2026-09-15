@@ -1,0 +1,190 @@
+{
+  "kind": "offline_checkpoint_replay",
+  "checkpoint_archive": "checkpoint_dp.zip",
+  "checkpoint_member": "outputs/blah/checkpoints/latest.ckpt",
+  "checkpoint_sha256": "07ba7644d855c0435a695139114f6f35e1895b501bfcc6f737fd21196fad8cb0",
+  "state_key": "ema_model",
+  "episode": 14,
+  "seed": 42,
+  "inference_steps": 100,
+  "horizon": 16,
+  "n_obs_steps": 2,
+  "n_action_steps": 6,
+  "action_order": [
+    "x",
+    "y",
+    "z",
+    "rx",
+    "ry",
+    "rz",
+    "left_jaw",
+    "right_jaw"
+  ],
+  "alignment": "Approximate: video elapsed time matched to replay-buffer episode elapsed time; original camera timestamps unavailable.",
+  "interpretation": "Actual model denoising iterates on recorded observations; these newly sampled actions were not executed on the robot and are not the original deployment predictions.",
+  "samples": [
+    {
+      "time": 5.0,
+      "sample_index": 50
+    },
+    {
+      "time": 12.0,
+      "sample_index": 120
+    },
+    {
+      "time": 20.0,
+      "sample_index": 200
+    }
+  ],
+  "torch_version": "1.12.1",
+  "policy_config": {
+    "_target_": "diffusion_policy.policy.diffusion_unet_image_policy.DiffusionUnetImagePolicy",
+    "shape_meta": {
+      "obs": {
+        "camera_0": {
+          "shape": [
+            3,
+            240,
+            320
+          ],
+          "type": "rgb"
+        },
+        "camera_1": {
+          "shape": [
+            3,
+            240,
+            320
+          ],
+          "type": "rgb"
+        },
+        "camera_2": {
+          "shape": [
+            3,
+            240,
+            320
+          ],
+          "type": "rgb"
+        },
+        "robot_eef_pose": {
+          "shape": [
+            6
+          ],
+          "type": "low_dim"
+        },
+        "left_jaw": {
+          "shape": [
+            1
+          ],
+          "type": "low_dim"
+        },
+        "right_jaw": {
+          "shape": [
+            1
+          ],
+          "type": "low_dim"
+        }
+      },
+      "action": {
+        "shape": [
+          8
+        ]
+      }
+    },
+    "noise_scheduler": {
+      "_target_": "diffusers.schedulers.scheduling_ddim.DDIMScheduler",
+      "num_train_timesteps": 100,
+      "beta_start": 0.0001,
+      "beta_end": 0.02,
+      "beta_schedule": "squaredcos_cap_v2",
+      "clip_sample": true,
+      "set_alpha_to_one": true,
+      "steps_offset": 0,
+      "prediction_type": "epsilon"
+    },
+    "obs_encoder": {
+      "_target_": "diffusion_policy.model.vision.multi_image_obs_encoder.MultiImageObsEncoder",
+      "shape_meta": {
+        "obs": {
+          "camera_0": {
+            "shape": [
+              3,
+              240,
+              320
+            ],
+            "type": "rgb"
+          },
+          "camera_1": {
+            "shape": [
+              3,
+              240,
+              320
+            ],
+            "type": "rgb"
+          },
+          "camera_2": {
+            "shape": [
+              3,
+              240,
+              320
+            ],
+            "type": "rgb"
+          },
+          "robot_eef_pose": {
+            "shape": [
+              6
+            ],
+            "type": "low_dim"
+          },
+          "left_jaw": {
+            "shape": [
+              1
+            ],
+            "type": "low_dim"
+          },
+          "right_jaw": {
+            "shape": [
+              1
+            ],
+            "type": "low_dim"
+          }
+        },
+        "action": {
+          "shape": [
+            8
+          ]
+        }
+      },
+      "rgb_model": {
+        "_target_": "diffusion_policy.model.vision.model_getter.get_resnet",
+        "name": "resnet18",
+        "weights": null
+      },
+      "resize_shape": [
+        240,
+        320
+      ],
+      "crop_shape": [
+        216,
+        288
+      ],
+      "random_crop": true,
+      "use_group_norm": true,
+      "share_rgb_model": false,
+      "imagenet_norm": true
+    },
+    "horizon": 16,
+    "n_action_steps": 6,
+    "n_obs_steps": 2,
+    "num_inference_steps": 100,
+    "obs_as_global_cond": true,
+    "diffusion_step_embed_dim": 128,
+    "down_dims": [
+      512,
+      1024,
+      2048
+    ],
+    "kernel_size": 5,
+    "n_groups": 8,
+    "cond_predict_scale": true
+  }
+}

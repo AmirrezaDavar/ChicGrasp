@@ -1,0 +1,30 @@
+{
+  "loaded": {
+    "ready": true,
+    "images": [],
+    "overflow": false,
+    "readout": "First future target: x 0.037 m · y -0.643 m · z 0.017 m | Left OPEN · Right OPEN. Trained action prefix: indices 2–7 of the 16-step window."
+  },
+  "initial": "0 / 100",
+  "playing": 4,
+  "changed": {
+    "image": "assets/data/t5_camera_0.jpg",
+    "readout": "First future target: x 0.019 m · y -0.688 m · z 0.050 m | Left OPEN · Right OPEN. Trained action prefix: indices 2–7 of the 16-step window."
+  },
+  "jaws": {
+    "left": "CLOSED",
+    "right": "CLOSED"
+  },
+  "mobile": {
+    "overflow": false,
+    "width": 390,
+    "scrollWidth": 390,
+    "canvasWidth": 322,
+    "videoWidth": 354
+  },
+  "evidence": {
+    "title": "ChicGrasp — Evidence and reproduction",
+    "overflow": false
+  },
+  "errors": []
+}

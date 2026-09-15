@@ -1,0 +1,531 @@
+{
+  "rows": [
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_1",
+      "split": "seen",
+      "successes": 9,
+      "trials": 10,
+      "nominal_successes": 9,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_2",
+      "split": "seen",
+      "successes": 8,
+      "trials": 10,
+      "nominal_successes": 8,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_3",
+      "split": "seen",
+      "successes": 7,
+      "trials": 10,
+      "nominal_successes": 7,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_4",
+      "split": "seen",
+      "successes": 9,
+      "trials": 10,
+      "nominal_successes": 9,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_5",
+      "split": "seen",
+      "successes": 9,
+      "trials": 10,
+      "nominal_successes": 9,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_6",
+      "split": "seen",
+      "successes": 9,
+      "trials": 10,
+      "nominal_successes": 9,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_7",
+      "split": "seen",
+      "successes": 8,
+      "trials": 10,
+      "nominal_successes": 8,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_8",
+      "split": "seen",
+      "successes": 8,
+      "trials": 10,
+      "nominal_successes": 8,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_9",
+      "split": "seen",
+      "successes": 10,
+      "trials": 10,
+      "nominal_successes": 10,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_10",
+      "split": "seen",
+      "successes": 7,
+      "trials": 10,
+      "nominal_successes": 7,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_11",
+      "split": "unseen",
+      "successes": 7,
+      "trials": 10,
+      "nominal_successes": 3,
+      "nominal_trials": 3,
+      "disturbed_successes": 4,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_12",
+      "split": "unseen",
+      "successes": 6,
+      "trials": 10,
+      "nominal_successes": 3,
+      "nominal_trials": 3,
+      "disturbed_successes": 3,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_13",
+      "split": "unseen",
+      "successes": 8,
+      "trials": 10,
+      "nominal_successes": 2,
+      "nominal_trials": 3,
+      "disturbed_successes": 6,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "Diffusion Policy",
+      "chicken": "Chi_14",
+      "split": "unseen",
+      "successes": 8,
+      "trials": 10,
+      "nominal_successes": 3,
+      "nominal_trials": 3,
+      "disturbed_successes": 5,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_1",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_2",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_3",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_4",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_5",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_6",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_7",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_8",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_9",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_10",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_11",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 3,
+      "disturbed_successes": 0,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_12",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 3,
+      "disturbed_successes": 0,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_13",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 3,
+      "disturbed_successes": 0,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "IBC",
+      "chicken": "Chi_14",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 3,
+      "disturbed_successes": 0,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_1",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_2",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_3",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_4",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_5",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_6",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_7",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_8",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_9",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_10",
+      "split": "seen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 10,
+      "disturbed_successes": 0,
+      "disturbed_trials": 0
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_11",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 3,
+      "disturbed_successes": 0,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_12",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 3,
+      "disturbed_successes": 0,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_13",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 3,
+      "disturbed_successes": 0,
+      "disturbed_trials": 7
+    },
+    {
+      "method": "LSTM-GMM",
+      "chicken": "Chi_14",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 10,
+      "nominal_successes": 0,
+      "nominal_trials": 3,
+      "disturbed_successes": 0,
+      "disturbed_trials": 7
+    }
+  ],
+  "summary": [
+    {
+      "method": "Diffusion Policy",
+      "split": "all",
+      "successes": 113,
+      "trials": 140,
+      "success_percent": 80.71
+    },
+    {
+      "method": "Diffusion Policy",
+      "split": "seen",
+      "successes": 84,
+      "trials": 100,
+      "success_percent": 84.0
+    },
+    {
+      "method": "Diffusion Policy",
+      "split": "unseen",
+      "successes": 29,
+      "trials": 40,
+      "success_percent": 72.5
+    },
+    {
+      "method": "IBC",
+      "split": "all",
+      "successes": 0,
+      "trials": 140,
+      "success_percent": 0.0
+    },
+    {
+      "method": "IBC",
+      "split": "seen",
+      "successes": 0,
+      "trials": 100,
+      "success_percent": 0.0
+    },
+    {
+      "method": "IBC",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 40,
+      "success_percent": 0.0
+    },
+    {
+      "method": "LSTM-GMM",
+      "split": "all",
+      "successes": 0,
+      "trials": 140,
+      "success_percent": 0.0
+    },
+    {
+      "method": "LSTM-GMM",
+      "split": "seen",
+      "successes": 0,
+      "trials": 100,
+      "success_percent": 0.0
+    },
+    {
+      "method": "LSTM-GMM",
+      "split": "unseen",
+      "successes": 0,
+      "trials": 40,
+      "success_percent": 0.0
+    }
+  ]
+}
