@@ -6,23 +6,12 @@
     "scope": "Local tracked displacement only; not absolute camera calibration"
   },
   "status": "passed",
-  "local_links_checked": 111,
+  "local_links_checked": 295,
   "table_arithmetic": "passed",
   "replay_arrays": "3 \u00d7 101 \u00d7 16 \u00d7 8; finite; final arrays match policy output; trained action slices agree",
   "recorded_jaw_transitions": "right 20.6 s; left 21.1 s",
   "caption_timing": "passed",
   "videos": [
-    {
-      "file": "chicgrasp_84s.mp4",
-      "width": 1920,
-      "height": 1080,
-      "fps": "24/1",
-      "frames": 2016,
-      "duration_seconds": 84.0,
-      "bytes": 7109678,
-      "full_decode": "passed",
-      "sha256": "071cd12bb8fc2e0d04af461a394194a9a0327baeae4f1f3bf6427fd03a0757bd"
-    },
     {
       "file": "chicgrasp_action_process.mp4",
       "width": 1280,
@@ -49,12 +38,12 @@
       "file": "chicgrasp_overview_80s.mp4",
       "width": 1920,
       "height": 1080,
-      "fps": "24/1",
-      "frames": 1920,
+      "fps": "30/1",
+      "frames": 2400,
       "duration_seconds": 80.0,
-      "bytes": 12725200,
+      "bytes": 15906721,
       "full_decode": "passed",
-      "sha256": "a1bed038e1fb8edd80c975e4cfeeefe3a7cddc265ff0e188c941cc701f3e536a"
+      "sha256": "71396656106b1625dfb79ecb2a28ccb576762e6a87a750a570c3830123bc9c6a"
     },
     {
       "file": "diffusion_action_generation.mp4",
@@ -77,28 +66,6 @@
       "bytes": 2592252,
       "full_decode": "passed",
       "sha256": "eb5030b345b3edd6945982f21db9f1ecda7eefcb8bd4ca8f0e04c501eb34be8a"
-    },
-    {
-      "file": "episode14_camera1.mp4",
-      "width": 960,
-      "height": 540,
-      "fps": "30/1",
-      "frames": 852,
-      "duration_seconds": 28.4,
-      "bytes": 2321334,
-      "full_decode": "passed",
-      "sha256": "e67c93d4920e2623109635fb323e984fde0cda56d1ddd1b9394206b815b2508e"
-    },
-    {
-      "file": "episode14_camera2.mp4",
-      "width": 960,
-      "height": 540,
-      "fps": "30/1",
-      "frames": 853,
-      "duration_seconds": 28.434,
-      "bytes": 1888885,
-      "full_decode": "passed",
-      "sha256": "8882e711af14600b16ca9947af570fb2763d49f19414748475ba51493e7fff48"
     },
     {
       "file": "gripper_cad_orbit.mp4",

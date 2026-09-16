@@ -66,18 +66,15 @@ def main():
         p=json.loads(result.stdout);v=next(s for s in p['streams'] if s['codec_type']=='video')
         subprocess.run(['ffmpeg','-v','error','-i',str(file),'-f','null','-'],capture_output=True,check=True)
         duration=float(p['format']['duration'])
-        if file.name=='chicgrasp_84s.mp4':
-            assert abs(duration-84)<.001
-            assert (v['width'],v['height'],v['r_frame_rate'],int(v['nb_frames']))==(1920,1080,'24/1',2016)
         assert v['pix_fmt']=='yuv420p' and v['codec_name']=='h264'
         probes.append(dict(file=file.name,width=v['width'],height=v['height'],fps=v['r_frame_rate'],frames=int(v['nb_frames']),duration_seconds=duration,bytes=file.stat().st_size,full_decode='passed',sha256=hashlib.sha256(file.read_bytes()).hexdigest()))
-    required={'chicgrasp_action_process.mp4','chicgrasp_action_process_clean.mp4','chicgrasp_overview_80s.mp4','chicgrasp_84s.mp4'}
+    required={'chicgrasp_action_process.mp4','chicgrasp_action_process_clean.mp4','chicgrasp_overview_80s.mp4'}
     assert required.issubset({p['file'] for p in probes})
     for p in probes:
         if p['file'].startswith('chicgrasp_action_process'):
             assert (p['width'],p['height'],p['fps'],p['frames'])==(1280,720,'30/1',328)
         if p['file']=='chicgrasp_overview_80s.mp4':
-            assert (p['width'],p['height'],p['fps'],p['frames'],p['duration_seconds'])==(1920,1080,'24/1',1920,80.0)
+            assert (p['width'],p['height'],p['fps'],p['frames'],p['duration_seconds'])==(1920,1080,'30/1',2400,80.0)
     process=np.load(DATA/'process/denoising_trace.npz')
     for i in range(3):
         trace=process[f'physical_{i}'];assert trace.shape==(17,6,16,8) and np.isfinite(trace).all()
@@ -90,15 +87,10 @@ def main():
         frames=[x for x in edit['timeline'] if x['sample']==i]
         assert all(sum(x['iteration']==step for x in frames)>=2 for step in range(17))
     cff=yaml.safe_load((ROOT/'CITATION.cff').read_text());assert cff['preferred-citation']['year']==2026 and len(cff['preferred-citation']['authors'])==9
-    vtt=(ROOT/'docs/assets/media/chicgrasp_84s.vtt').read_text()
     def seconds(stamp):
         parts=stamp.split(':');assert len(parts)==2
         m=int(parts[0]);s=float(parts[1]);assert 0<=s<60
         return m*60+s
-    previous=0
-    for start,end in re.findall(r'(\d+:\d+\.\d+) --> (\d+:\d+\.\d+)',vtt):
-        s,e=seconds(start),seconds(end);assert s>=previous and e>s and e<=84;previous=e
-    assert previous==84
     overview_vtt=(ROOT/'docs/assets/media/chicgrasp_overview_80s.vtt').read_text()
     previous=0
     for start,end in re.findall(r'(\d+:\d+\.\d+) --> (\d+:\d+\.\d+)',overview_vtt):
