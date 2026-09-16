@@ -49,12 +49,12 @@
       "file": "chicgrasp_overview_80s.mp4",
       "width": 1920,
       "height": 1080,
-      "fps": "24/1",
-      "frames": 1920,
+      "fps": "30/1",
+      "frames": 2400,
       "duration_seconds": 80.0,
-      "bytes": 12725200,
+      "bytes": 15906721,
       "full_decode": "passed",
-      "sha256": "a1bed038e1fb8edd80c975e4cfeeefe3a7cddc265ff0e188c941cc701f3e536a"
+      "sha256": "71396656106b1625dfb79ecb2a28ccb576762e6a87a750a570c3830123bc9c6a"
     },
     {
       "file": "diffusion_action_generation.mp4",

@@ -77,7 +77,7 @@ def main():
         if p['file'].startswith('chicgrasp_action_process'):
             assert (p['width'],p['height'],p['fps'],p['frames'])==(1280,720,'30/1',328)
         if p['file']=='chicgrasp_overview_80s.mp4':
-            assert (p['width'],p['height'],p['fps'],p['frames'],p['duration_seconds'])==(1920,1080,'24/1',1920,80.0)
+            assert (p['width'],p['height'],p['fps'],p['frames'],p['duration_seconds'])==(1920,1080,'30/1',2400,80.0)
     process=np.load(DATA/'process/denoising_trace.npz')
     for i in range(3):
         trace=process[f'physical_{i}'];assert trace.shape==(17,6,16,8) and np.isfinite(trace).all()
