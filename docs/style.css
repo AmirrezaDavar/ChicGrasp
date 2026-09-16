@@ -123,3 +123,12 @@ button:disabled { opacity:.45; cursor:default; }
 }
 
 #author-philip-glen-crandall .author-portrait { object-position:center 15%; }
+
+/* University affiliation marks use the original artwork and proportions. */
+.institution-logos { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:28px 64px; margin:34px 0 30px; }
+.institution-link { display:block; max-width:100%; }
+.institution-link img { width:240px; height:auto; object-fit:contain; }
+.institution-link:last-child img { width:252px; }
+@media(max-width:600px) {
+  .institution-logos { gap:26px; margin:30px 0; }
+}

@@ -73,3 +73,5 @@ Copy the generated `ibc/` and `lstm-gmm/` folders into `docs/assets/evaluations/
 The `#authors` section in `index.html` includes all nine paper authors in publication order. The linked names in the page header jump to their entries. Portraits are stored in `assets/authors/`; `README.md` and `sources.json` in that folder record the original sources. Keep affiliation superscripts consistent with the published paper. Layout and circular portrait crops use `.author-*` rules in `style.css`.
 
 Amirreza’s GitHub, LinkedIn, and professional email links appear directly below “My contribution.” Add a CV link there once a public CV is available. Update a portrait by adding a new file and changing its `src`; retain the prior original in the external archive.
+
+The university logos below the author portraits are in `assets/institutions/`. Use the original artwork and preserve its colors and proportions. Source URLs and checksums are recorded alongside the SVGs. Their links and layout are in `.institution-logos` in `index.html` and `style.css`.

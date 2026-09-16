@@ -15,3 +15,7 @@ The author order and departmental affiliations follow [Davar et al. (2026)](http
 | Dongyi Wang | [Source](https://dw-bioag.github.io/safelab/people.html) | [Profile](https://dw-bioag.github.io/safelab/people.html) |
 
 [sources.json](sources.json) records the image URLs, SHA-256 checksums, author order, and paper affiliations. Amirreza’s professional email is listed on the [SAFE Lab people page](https://dw-bioag.github.io/safelab/people.html).
+
+## University logos
+
+The affiliation logos use official, unmodified university artwork. See the [logo sources and checksums](../institutions/README.md).

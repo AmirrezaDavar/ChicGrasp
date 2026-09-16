@@ -1,0 +1,19 @@
+{
+  "retrieved": "2026-09-15",
+  "logos": [
+    {
+      "university": "University of Arkansas",
+      "file": "university-of-arkansas.svg",
+      "source_page": "https://brand.uark.edu/graphic-identity/downloads.php",
+      "image_url": "https://includes.uark.edu/assets/ua-logo-horz.svg",
+      "sha256": "bf8477021f81f83a91e0b27d7998620c6c8f38bf6bab7239fd4dca04ad53c98c"
+    },
+    {
+      "university": "Purdue University",
+      "file": "purdue-university.svg",
+      "source_page": "https://www.purdue.edu/",
+      "image_url": "https://www.purdue.edu/home/wp-content/themes/purdue-home-theme-beta/imgs/PU-H-light.svg",
+      "sha256": "5443d07a2f553b5ece70395262d6f485e4b531297cafa4d906dbedb1dff548fd"
+    }
+  ]
+}
