@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:12.000
+Motivation: poultry processing, rehang, and why grasping whole carcasses is difficult.
+
+00:12.000 --> 00:24.000
+Hardware: customized dual-jaw gripper with eye-in-hand sensing and independent pneumatic jaws.
+
+00:24.000 --> 00:40.000
+Gripper data: robot targets and jaw commands are represented as part of the policy action.
+
+00:40.000 --> 00:45.000
+Samples: seen and unseen carcasses define the evaluation split.
+
+00:45.000 --> 01:20.000
+Policy evaluation: diffusion-policy denoising, successes, failures, disturbances, baselines, and published results.
